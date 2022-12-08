@@ -9,3 +9,9 @@ html {
     background-size: cover;
    
   }
+
+  body{
+    margin: auto;
+    position: relative;
+    min-height: 100vh;
+  }
