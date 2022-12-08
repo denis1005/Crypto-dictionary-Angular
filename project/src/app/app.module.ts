@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from "./core/core.module";
+import { MainModule } from "./main/main.module";
 
 @NgModule({
     declarations: [
@@ -16,7 +17,8 @@ import { CoreModule } from "./core/core.module";
         BrowserModule,
         AppRoutingModule,
         CommonModule,
-        CoreModule
+        CoreModule,
+        MainModule
     ]
 })
 export class AppModule { }
