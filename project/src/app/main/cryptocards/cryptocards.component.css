@@ -1,7 +1,7 @@
 .cards-list {
   width: 60%;
   display: grid;
-  grid-template-columns: 14rem 14rem;
+  grid-template-columns: 14rem 14rem 14rem;
   justify-content: start;
   
   
@@ -14,8 +14,8 @@
 
 .card {
   margin: 30px auto;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 40px;
   box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
   cursor: pointer;
@@ -40,7 +40,7 @@
   border-radius: 0px 0px 40px 40px;
   font-family: sans-serif;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 15px;
   margin-top: -80px;
   height: 40px;
 }

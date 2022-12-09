@@ -1,5 +1,5 @@
 .container {
     display: flex;
     justify-content: center;
-    gap: 140px;
+    gap: 10px;
 }

@@ -1,0 +1,42 @@
+.facts {
+    width: 80%;
+    text-align: center;
+    background-color: rgba(23, 23, 50, 0.7);
+    border-radius: 2rem;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 120xp;
+}
+
+.facts h2 {
+    color:white;
+    text-align: center;
+}
+
+.divider {
+    background-color: white;
+    width: 120px;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 0px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.content-container .information-card img {
+    width: 30px;
+    color: white;
+}
+
+.content-container .information-card {
+    text-align: center;
+}
+
+.content-container .information-card > * {
+    color: white;
+}
