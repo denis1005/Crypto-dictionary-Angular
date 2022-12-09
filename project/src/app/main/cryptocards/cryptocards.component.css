@@ -1,12 +1,15 @@
 .cards-list {
-  width: 40%;
+  width: 60%;
   display: grid;
   grid-template-columns: 14rem 14rem;
   justify-content: start;
-
-  margin-left: 143px;
-  margin-bottom: 30px;
   
+  
+}
+
+.card a {
+  text-decoration: none;
+  color: white;
 }
 
 .card {
