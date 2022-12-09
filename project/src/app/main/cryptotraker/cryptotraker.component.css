@@ -14,16 +14,18 @@
 }
 .divider {
     background-color: white;
-    width: 120px;
+    width: 70%;
     height: 2px;
     margin: 0 auto;
 }
 
 .crypto-item {
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 3rem 3rem 3rem;
     justify-content: space-around;
     color: white;
+    align-items: center;
 }
 
 .crypto-item .logo {

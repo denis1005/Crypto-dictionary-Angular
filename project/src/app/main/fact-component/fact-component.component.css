@@ -5,12 +5,13 @@
     border-radius: 2rem;
     margin: 0 auto;
     padding: 20px;
-    margin-bottom: 120xp;
+    margin-bottom: 30px;
 }
 
 .facts h2 {
     color:white;
     text-align: center;
+    font-size: 40px;
 }
 
 .divider {
@@ -26,10 +27,11 @@
     justify-content: space-between;
     align-items: center;
     gap: 40px;
+    margin-top: 80px;
 }
 
 .content-container .information-card img {
-    width: 30px;
+    width: 50px;
     color: white;
 }
 
@@ -40,3 +42,4 @@
 .content-container .information-card > * {
     color: white;
 }
+

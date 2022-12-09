@@ -1,53 +1,112 @@
 <div class="container">
     <h2>
-        Crypto tracker
+      Crypto prices
     </h2>
     <div class="divider"></div>
     <ul class="crypto-list">
         <li class="crypto-item">  
            <img class="logo" src="../../../assets/crypto icons/btc.svg" alt="" class="logo">
-            <p>Name:</p>
-            <p>Price:</p>
+           <ng-container *ngIf="cryptoData.length!=0">
+            <p>{{cryptoData[0].asset_id}}</p>
+            <p>{{cryptoData[0].price_usd.toFixed(2)}}$</p>
+          </ng-container>
+          <ng-container *ngIf="cryptoData.length==0">
+            <p>BTC</p>
+            <p>17000$</p>
+          </ng-container>
         </li>
         <li class="crypto-item">  
             <img class="logo" src="../../../assets/crypto icons/eth.svg" alt="" class="logo">
-             <p>Name:</p>
-             <p>Price:</p>
+            <ng-container *ngIf="cryptoData.length!=0">
+               <p>{{cryptoData[4].asset_id}}</p>
+               <p>{{cryptoData[4].price_usd.toFixed(2)}}$</p>
+            </ng-container>
+            <ng-container *ngIf="cryptoData.length==0">
+               <p>ETH</p>
+               <p>1200$</p>
+            </ng-container>
          </li>
          <li class="crypto-item">  
             <img class="logo" src="../../../assets/crypto icons/usdt.svg" alt="" class="logo">
-             <p>Name:</p>
-             <p>Price:</p>
+            <ng-container *ngIf="cryptoData.length!=0">
+               <p>{{cryptoData[7].asset_id}}</p>
+            <p>{{cryptoData[7].price_usd.toFixed(2)}}$</p>
+            </ng-container>
+            <ng-container *ngIf="cryptoData.length==0">
+               <p>USDT</p>
+               <p>1$</p>
+            </ng-container>
+           
          </li>
          <li class="crypto-item">  
             <img class="logo" src="../../../assets/crypto icons/bnb.svg" alt="" class="logo">
-             <p>Name:</p>
-             <p>Price:</p>
+            <ng-container *ngIf="cryptoData.length!=0">
+               <p>{{cryptoData[5].asset_id}}</p>
+               <p>{{cryptoData[5].price_usd.toFixed(2)}}$</p>
+            </ng-container>
+            <ng-container *ngIf="cryptoData.length==0">
+               <p>BNB</p>
+               <p>120$</p>
+            </ng-container>
+           
          </li>
          <li class="crypto-item">  
             <img class="logo" src="../../../assets/crypto icons/busd.svg" alt="" class="logo">
-             <p>Name:</p>
-             <p>Price:</p>
+            <ng-container *ngIf="cryptoData.length!=0">
+               <p>{{cryptoData[9].asset_id}}</p>
+               <p>{{cryptoData[9].price_usd.toFixed(2)}}$</p>
+            </ng-container>
+            <ng-container *ngIf="cryptoData.length==0">
+               <p>BUSD</p>
+               <p>1$</p>
+            </ng-container>
          </li>
          <li class="crypto-item">  
-            <img class="logo" src="../../../assets/crypto icons/xrp.svg" alt="" class="logo">
-             <p>Name:</p>
-             <p>Price:</p>
+           
+           <img class="logo" src="../../../assets/crypto icons/xrp.svg" alt="" class="logo">
+           <ng-container *ngIf="cryptoData.length!=0">
+            <p>{{cryptoData[1].asset_id}}</p>
+            <p>{{cryptoData[1].price_usd.toFixed(2)}}$</p>
+           </ng-container>
+           <ng-container *ngIf="cryptoData.length==0">
+            <p>XRP</p>
+            <p>2$</p>
+         </ng-container>
          </li>
          <li class="crypto-item">  
+            
             <img class="logo" src="../../../assets/crypto icons/doge.svg" alt="" class="logo">
-             <p>Name:</p>
-             <p>Price:</p>
+            <ng-container *ngIf="cryptoData.length!=0">
+               <p>{{cryptoData[3].asset_id}}</p>
+               <p>{{cryptoData[3].price_usd.toFixed(2)}}$</p>
+            </ng-container>
+            <ng-container *ngIf="cryptoData.length==0">
+               <p>DOGE</p>
+               <p>0,30$</p>
+            </ng-container>
          </li>
          <li class="crypto-item">  
             <img class="logo" src="../../../assets/crypto icons/ada.svg" alt="" class="logo">
-             <p>Name:</p>
-             <p>Price:</p>
+            <ng-container *ngIf="cryptoData.length!=0">
+               <p>{{cryptoData[6].asset_id}}</p>
+             <p>{{cryptoData[6].price_usd.toFixed(2)}}$</p>
+            </ng-container>
+            <ng-container *ngIf="cryptoData.length==0">
+               <p>ADA</p>
+               <p>0,40$</p>
+            </ng-container>
          </li>
          <li class="crypto-item">  
             <img class="logo" src="../../../assets/crypto icons/matic.svg" alt="" class="logo">
-             <p>Name:</p>
-             <p>Price:</p>
+            <ng-container *ngIf="cryptoData.length!=0">
+               <p>{{cryptoData[8].asset_id}}</p>
+               <p>{{cryptoData[8].price_usd.toFixed(2)}}$</p>
+            </ng-container>
+            <ng-container *ngIf="cryptoData.length==0">
+               <p>MATIC</p>
+               <p>0,90$</p>
+            </ng-container>
+            
          </li>
          
     </ul>
