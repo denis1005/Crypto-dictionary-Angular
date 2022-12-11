@@ -16,8 +16,8 @@ import { MainModule } from "./main/main.module";
     providers: [],
     bootstrap: [AppComponent],
     imports: [
-        AppRoutingModule,
         AuthModule,
+        AppRoutingModule,
         BrowserModule,
         CommonModule,
         CoreModule,

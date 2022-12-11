@@ -1,0 +1,26 @@
+{
+ 
+    "crypto": {
+        "54e6d099-6e00-4613-97b7-bc2b6bdc1db5": {
+            "name": "Ethereum",
+            "symbol": "ETH",
+            "imgUrl": "https://static.displate.com/857x1200/displate/2021-08-16/05162d9e40a34424599c99555f5bde27_7e0aeb7a273d197154213518c16af21b.jpg",
+            "price": 2000,
+            "_id": "54e6d099-6e00-4613-97b7-bc2b6bdc1db5"
+        },
+        "f94698f3-e4c0-45b2-b391-34e555ed702d": {
+            "firstName": "Nvy",
+            "lastName": "Ose",
+            "facultyNumber": "90000123456",
+            "grade": 6,
+            "_id": "f94698f3-e4c0-45b2-b391-34e555ed702d"
+        },
+        "a8ab018a-5a00-4652-ab3b-036bc91bd21f": {
+            "firstName": "Sunny",
+            "lastName": "Jackson",
+            "facultyNumber": "90000334562",
+            "grade": 4.4,
+            "_id": "a8ab018a-5a00-4652-ab3b-036bc91bd21f"
+        }
+    }
+}
