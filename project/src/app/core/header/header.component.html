@@ -10,20 +10,19 @@
         <li><a href="#">about</a></li>
       </ul>
     </li>
-    <li><a routerLink="/login">Login</a>
+    <ng-container *ngIf="!auth">
+      <li><a routerLink="/login">Login</a>
      
-    </li>
-    <li><a routerLink="/register">Register</a>
-      
-    </li>
-    <li><a href="#">works</a>
+      </li>
+      <li><a routerLink="/register">Register</a>
+        
+      </li>
+    </ng-container >
+     <ng-container *ngIf="auth">
+      <li><a routerLink="/logout">Logout</a>
      
-    </li>
-    <li><a href="#">team</a>
-     
-    </li>
-    <li><a href="#">about</a>
-      
-    </li>
+      </li>
+     </ng-container>
+   
   </ul>
 </nav>

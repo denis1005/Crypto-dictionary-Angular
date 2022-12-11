@@ -8,12 +8,19 @@ import { AppComponent } from './app.component';
 import { AuthModule } from './auth/auth.module';
 import { CoreModule } from "./core/core.module";
 import { MainModule } from "./main/main.module";
+import { appInterceptorProvider } from './app.interceptor';
+import { AuthenticateComponent as AuthenticateComponent } from './authenticate/authentificate.component';
+
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        AuthenticateComponent
+
     ],
-    providers: [],
+    providers: [
+        appInterceptorProvider
+    ],
     bootstrap: [AppComponent],
     imports: [
         AuthModule,
@@ -23,6 +30,7 @@ import { MainModule } from "./main/main.module";
         CoreModule,
         MainModule,
         HttpClientModule,
+        
     ]
 })
 export class AppModule { }
