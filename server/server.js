@@ -1650,85 +1650,17 @@
             "54e6d099-6e00-4613-97b7-bc2b6bdc1db5": {
                 "name": "Ethereum",
                 "symbol": "ETH",
-                "imgUrl": "https://bitcoinist.com/wp-content/uploads/2022/06/Ethereum-3.jpeg",
-                "price": 2000,
-                "description":"Ethereum is a decentralized blockchain platform that establishes a peer-to-peer network that securely executes and verifies application code, called smart contracts. Smart contracts allow participants to transact with each other without a trusted central authority.",
-                "useCases":"DeFi is a network of financial applications built on top of blockchain networks. It is different from existing financial networks because it is open and programmable, operates without a central authority, and enables developers to offer new models for payments, investing, lending, and trading. By using smart contracts and distributed systems, customers can easily build secure decentralized financial applications. For example, DeFi companies are already offering products that enable peer-to-peer lending and borrowing, earning interest on cryptocurrency holdings, trading via decentralized exchanges, and much more. Some popular DeFi platforms include Compound, Aave, UniSwap, and MakerDAO.",
-                "founder":"Vitalik was known to be a pithy writer who was able to turn complicated ideas about cryptocurrency and the technology behind it into very clear prose. At the age of 18, he co-founded “Bitcoin Magazine” and became the lead writer, and he started to gain followers globally.",
+                "imgUrl": "https://img.freepik.com/premium-photo/eth-ethereum-icon-logo-black-flag-banner-background-concept-3d-illustration-cryptocurrency_309402-3.jpg?w=1060",
+                "description":"Ethereum is a decentralized blockchain platform that establishes a peer-to-peer network that securely executes and verifies application code, called smart contracts. Smart contracts allow participants to transact with each other without a trusted central authority.It is traded as a digital currency on exchanges, held as an investment, used to purchase goods and services, and used on the Ethereum network to pay transaction fees.",
+                 "facts": {
+                    'founder':'Vitalik Buterin',
+                    'coins':'117.5 million ETH coins in circulation',
+                    'funFact':'Ethereum Testnets named after Metro Station.Ethereum blockchain has 5 testnets i.e Goerli, Sepolia, Ropsten, Rinkeby & Koven. All the testnets are named after metro stations. For example, Goerli is named after a metro station in Berlin, Germany.',
+                 },
+                 'video':'width="560" height="315" src="https://www.youtube.com/embed/jxLkbJozKbY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>',
+                
                 "_id": "54e6d099-6e00-4613-97b7-bc2b6bdc1db5",
             },
-            "54e6d099-6e00-4613-97b7-bc2b6bdc1db9": {
-                "name": "Bitcoin",
-                "symbol": "BTC",
-                "imgUrl": "https://www.cointribune.com/app/uploads/2021/08/4-prichiny-predstojashhego-rosta-kursa-bitcoin-btc-b32f43b.jpg",
-                "price": 24000,
-                "useCases": "It seems, for now, that the only real use case for cryptocurrency is as a new investment vehicle. These coins have become a way to invest in tech start-ups that few investors understand, or even use.",
-                "founder":"Satoshi Nakamoto made the Bitcoin software in 2008 and made it open source in January 2009. And in 2010, Satoshi Nakamoto disappeared. No one even knows what pronoun to use (he, she, or they) while referring to Satoshi Nakamoto because it is still not clear whether he/she is a person or a group of people.",
-                "description":"Bitcoin, often described as a cryptocurrency, a virtual currency or a digital currency - is a type of money that is completely virtual. It's like an online version of cash. You can use it to buy products and services, but not many shops accept Bitcoin yet and some countries have banned it altogether.",
-                "_id": "54e6d099-6e00-4613-97b7-bc2b6bdc1db9"
-            },
-            "54e6d099-6e00-4613-97b7-bc2b6bdc1db10": {
-                "name": "Cardano",
-                "symbol": "Ada",
-                "imgUrl": "https://u.today/sites/default/files/styles/736x/public/2022-08/22665.jpg",
-                "price": 0.40,
-                "founder":"Charles Hoskinson has carved out a niche in the crypto world and a pretty large one at that. He has been at the foundation of three crypto startups, Cardano, Ethereum, and Invictus Innovations.",
-                "useCases":"Cardano's primary use case is as a cryptocurrency. ADA, its cryptocurrency, is part of Cardano's settlement layer. Cardano is often to as the “Japanese ethereum” and reports last year indicated that it was being made available in Japan through ATMs and debit cards.",
-                "description":"Cardano is an ecosystem that allows other developers to create tokens, decentalized applications, or create other use cases for scalable blockchain network. Cardano uses proof-of-stake in its consensus and doesn't reward Ada as an incentive in a competitive mining process like Bitcoin does.",
-                "_id": "54e6d099-6e00-4613-97b7-bc2b6bdc1db10"
-            },
-            "54e6d099-6e00-4613-97b7-bc2b6bdc1db12": {
-                "name": "Xrp",
-                "symbol": "Xrp",
-                "imgUrl": "https://dailyhodl.com/wp-content/uploads/2019/11/mggsi987sa.png?w=810",
-                "price": 0.40,
-                "founder":"XRP, in contrast, was “pre-mined,” meaning the XRP Ledger created 100 billion units that are then periodically released publicly. Ripple owns a portion of XRP in circulations, and that is an incentive for it to help the cryptocurrency grow and be successful over time",
-                "useCases":"Currently, there are two main use cases for XRP. Low commission currency exchange: There are many cases where one currency can't be directly exchanged for another and must be changed to an intermediary currency first. Usually, that currency is the U.S. dollar.",
-                "description":"XRP, itself, is used to source liquidity on-demand and reduce the amount in nostro accounts required to make global payments. Ripple also funds the Interledger Protocol, a software platform that aims to facilitate transactions between cryptocurrencies and bank ledgers.",
-                "_id": "54e6d099-6e00-4613-97b7-bc2b6bdc1db12"
-            },
-            "54e6d099-6e00-4613-97b7-bc2b6bdc1db13": {
-                "name": "Shiba Inu",
-                "symbol": "SHIB",
-                "imgUrl": "https://thumbs.dreamstime.com/b/shiba-inu-shib-cryptocurrency-token-coin-235807966.jpg",
-                "founder":"The largest holder of Shiba Inu is a dead wallet containing the contents of Ethereum co-founder Vitalik Buterin's Shiba Inu burn. ",
-                "useCases":"How Shiba Inu coin works? Since ShibaSwap is built on the Ethereum blockchain, it offers trading between ERC-20 tokens, meaning tokens built on that specific blockchain. Users can also stake (deposit) their crypto to the exchange's liquidity pools so the exchange can use it. In return, users receive crypto rewards on their staked tokens",
-                "description":"Shiba Inu Coin is a decentralized, community-building cryptocurrency that is “an experiment” developed within the Shiba Inu Ecosystem. They built it on top of the Ethereum Blockchain Network, like many other coins. It is a meme coin launched as a rival of Dogecoin or “Doge-Killer”",
-                "_id": "54e6d099-6e00-4613-97b7-bc2b6bdc1db13"
-            },
-            "54e6d099-6e00-4613-97b7-bc2b6bdc1db14": {
-                "name": "Polygon",
-                "imgUrl": "https://thumbs.dreamstime.com/b/polygon-matic-coin-cryptocurrency-concept-banner-background-248569159.jpg",
-                "founder":"Sandeep Nailwal, who co-founded Polygon in 2017 and relocated to Dubai two years ago, said India was witnessing crypto brain drain because there was still no clarity in its policies, according to a Bloomberg report ",
-                "useCases":"What is the use of Polygon coin? Polygon is a “layer two” or “sidechain” scaling solution that runs alongside the Ethereum blockchain — allowing for speedy transactions and low fees. MATIC is the network's native cryptocurrency, which is used for fees, staking, and more. You can buy or sell MATIC via exchanges like Coinbase.",
-                "description":"What does Polygon coin do? MATIC is the native cryptocurrency of the Polygon network and is used to help drive development across the network and can be used for staking and paying for transaction fees. Users can earn MATIC tokens by providing computational resources and services to the Polygon network.",
-                "_id": "54e6d099-6e00-4613-97b7-bc2b6bdc1db14"
-            },
-            "54e6d099-6e00-4613-97b7-bc2b6bdc1db15": {
-                "name": "Uniswap",
-                "imgUrl": "https://1inch.io/img/liquiditySources/uniswap/about_1.png",
-                "founder":"Hayden Adams is founder of Uniswap, one of the most widely used decentralized applications built on Ethereum. Prior to Uniswap, Hayden was an engineer at Siemens. ",
-                "useCases":" Uniswap is a program on the Ethereum blockchain for trading ERC20 tokens. In contrast to most exchanges, which are intended to take trading charges, Uniswap works for public welfare. It is a tool for members to exchange tokens easily without paying any platform charges or dealing with negotiators.",
-                "description":"Uniswap has risen in popularity as it does not charge fees to list tokens. This allows several Ethereum-based tokens such as Shiba Inu (SHIB), Decentraland (MANA), Enjin (ENJ), etc to be easily accessible for traders. It does not support non-ERC-20 tokens such as Bitcoin (BTC), Dogecoin (DOGE), Cardano (ADA), etc",
-                "_id": "54e6d099-6e00-4613-97b7-bc2b6bdc1db15"
-            },
-            "54e6d099-6e00-4613-97b7-bc2b6bdc1db16": {
-                "name": "Chainlink",
-                "imgUrl": "https://beincrypto.com/wp-content/uploads/2022/01/chainlink-2.jpg",
-                "founder":"Chainlink was created in 2017 by Sergey Nazarov and Steve Ellis, who co-authored a white paper introducing the Chainlink protocol and network with Cornell University professor Ari Juels the same year.",
-                "useCases":" It uses an off-chain and on-chain infrastructure to facilitate the information flow on and off the blockchain. Chainlink can be used in various industries such as insurance, securities, supply chain, payments and others, wherever the proof of events and data stamps are required.",
-                "description":"What is Chainlink trying to solve? Chainlink has solved the oracle problem of smart contracts by creating a distributed pool of oracles, in each of which the oracles all strive to produce high-quality information. Smart contracts that take advantage of a decentralized pool of oracles improve their reliability",
-                "_id": "54e6d099-6e00-4613-97b7-bc2b6bdc1db16"
-            },
-            "54e6d099-6e00-4613-97b7-bc2b6bdc1db17": {
-                "name": "Algorand",
-                "imgUrl": "https://dlt4all.eu/wp-content/uploads/2020/03/Algorand-CEO-Defends-Valuation-And-Claims-Blockchain-Will-Benefit-From-Algo-Sale-930x620.jpg",
-                "founder":"Silvio Micali In 2017, Silvio founded Algorand, a fully decentralized, secure, and scalable blockchain which provides a common platform for building products and services for a borderless economy. At Algorand, Silvio oversees all research, including theory, security and crypto finance.",
-                "useCases":" Algorand (ALGO) is a blockchain platform and cryptocurrency designed to function like a major payments processor. ALGO, the native coin of the Algorand platform, is used to secure the platform and reward the platform's operators.",
-                "description":"Algorand has a unique two-tiered blockchain structure. The base layer supports smart contracts, asset creation, and atomic swaps between assets. All of these processes take place on Layer 1 of the Algorand blockchain, which helps ensure security and compatibility.",
-                "_id": "54e6d099-6e00-4613-97b7-bc2b6bdc1db17"
-            },
-         
         },
         memes:{
             "0a272c58-b7ea-4e09-a000-7ec988248f63": {
