@@ -9,7 +9,14 @@ import { AuthServiceService } from './auth/auth-service.service';
 export class AppComponent {
   title = 'project';
 
+  isAuth:boolean=false
+
   constructor(public authService:AuthServiceService){
+    this.authService.auth.subscribe((value)=>{
+       this.isAuth=value
+    })
 
   }
+  
+  
 }

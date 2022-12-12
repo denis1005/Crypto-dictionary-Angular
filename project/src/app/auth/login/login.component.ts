@@ -20,7 +20,6 @@ export class LoginComponent {
     this.authService.login(email,password)
     .subscribe(user=>{
       this.authService.user=user;
-      this.authService.auth=true;
       localStorage.setItem("user",JSON.stringify(user));
       console.log(this.authService.user, this.authService.auth)
       this.router.navigate(['/'])

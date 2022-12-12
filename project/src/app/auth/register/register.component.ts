@@ -20,7 +20,6 @@ export class RegisterComponent {
     this.authService.register(email,password)
     .subscribe(user=>{
       this.authService.user=user;
-      this.authService.auth=true;
       localStorage.setItem("user",JSON.stringify(user));
       this.router.navigate(['/'])
     })

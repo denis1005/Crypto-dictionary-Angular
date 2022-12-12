@@ -24,7 +24,7 @@ export class LogoutComponent implements OnInit {
     this.authServices.logout(this.headers).subscribe({
       next:()=>{
         localStorage.clear();
-        this.authServices.auth=false;
+    
         this.router.navigate(['/'])
       },
       error:(err)=>{
