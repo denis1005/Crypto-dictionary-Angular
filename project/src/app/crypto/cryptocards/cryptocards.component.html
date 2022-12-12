@@ -1,67 +1,13 @@
 
 <div class="cards-list">
   
-    <div class="card 1">
-      <div class="card_image"> <img src="https://img.freepik.com/premium-photo/eth-ethereum-icon-logo-black-flag-banner-background-concept-3d-illustration-cryptocurrency_309402-3.jpg?w=1060" /> </div>
+    <div class="card 1" *ngFor="let crypto of cryptoData">
+      <div class="card_image"> <img src={{crypto.imgUrl}} /> </div>
       <div class="card_title title-white">
-        <a routerLink="/crypto/1">Read more</a>
+        <a [routerLink]="['/crypto',crypto._id]">Read more</a>
       </div>
     </div>
 
-    <div class="card 1">
-        <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
-        <div class="card_title title-white">
-          <a routerLink="/crypto/1">Read more</a>
-        </div>
-      </div>
-
-      <div class="card 1">
-        <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
-        <div class="card_title title-white">
-          <a routerLink="/crypto/1">Read more</a>
-        </div>
-      </div>
-
-      <div class="card 1">
-        <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
-        <div class="card_title title-white">
-          <a href="">Read more</a>
-        </div>
-      </div>
-
-      <div class="card 1">
-        <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
-        <div class="card_title title-white">
-          <a href="">Read more</a>
-        </div>
-      </div>
-
-      <div class="card 1">
-        <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
-        <div class="card_title title-white">
-          <a href="">Read more</a>
-        </div>
-      </div>
-
-      <div class="card 1">
-        <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
-        <div class="card_title title-white">
-          <a href="">Read more</a>
-        </div>
-      </div>
-
-      <div class="card 1">
-        <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
-        <div class="card_title title-white">
-          <a href="">Read more</a>
-        </div>
-      </div>
-      
-      <div class="card 1">
-        <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
-        <div class="card_title title-white">
-          <a href="">Read more</a>
-        </div>
-      </div>
+    
 
     </div>
