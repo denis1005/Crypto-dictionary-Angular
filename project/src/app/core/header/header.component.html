@@ -10,7 +10,7 @@
         <li><a href="#">about</a></li>
       </ul>
     </li>
-    <ng-container *ngIf="!auth">
+    <ng-container *ngIf="!isUserAuthenticated">
       <li><a routerLink="/login">Login</a>
      
       </li>
@@ -18,7 +18,7 @@
         
       </li>
     </ng-container >
-     <ng-container *ngIf="auth">
+     <ng-container *ngIf="isUserAuthenticated">
       <li><a routerLink="/logout">Logout</a>
      
       </li>

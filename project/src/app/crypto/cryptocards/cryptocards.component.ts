@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './cryptocards.component.html',
   styleUrls: ['./cryptocards.component.css']
 })
-export class CryptocardsComponent {
+export class CryptoCardsComponent {
 
 }

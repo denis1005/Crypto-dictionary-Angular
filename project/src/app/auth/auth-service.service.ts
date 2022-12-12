@@ -1,11 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable, tap } from 'rxjs';
-import {environment} from '../environments/environment.prod'
 import { IUser } from '../shared/interfaces/UserInterfase';
-
-const apiUrl=environment.apiUrl;
-
 
 @Injectable({
   providedIn: 'root'
@@ -23,15 +19,7 @@ export class AuthServiceService {
   }
 
   get isLoggedIn(){
-    
-    if(this.user !==null){
-      const userString=localStorage.getItem('user')
-      
-      return JSON.parse(userString!)
-    }
-    else {
       return this.user !==null
-    }
   }
 
   constructor(private http: HttpClient) { 
@@ -57,6 +45,7 @@ export class AuthServiceService {
     )
   }
 
+
   logout(headers:HttpHeaders){
     return this.http.get(`/api/users/logout`,{headers}).pipe(
       tap((response:any)=>{
@@ -64,10 +53,6 @@ export class AuthServiceService {
       })
     );
   }
- 
-
-
-  
 
   getProfile(headers:HttpHeaders){
     return this.http.request('GET','/api/users/me',{headers})

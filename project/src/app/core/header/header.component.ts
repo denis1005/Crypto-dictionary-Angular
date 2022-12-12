@@ -1,4 +1,5 @@
 import { Component, OnInit, OnChanges, SimpleChanges, Input } from '@angular/core';
+import { Observable } from 'rxjs';
 import { AuthServiceService } from 'src/app/auth/auth-service.service';
 import { IUser } from 'src/app/shared/interfaces/UserInterfase';
 
@@ -9,16 +10,21 @@ import { IUser } from 'src/app/shared/interfaces/UserInterfase';
 })
 export class HeaderComponent implements  OnInit {
 
-  @Input('auth') auth:boolean=false
+  
   user: IUser | null =null
+  isUserAuthenticated?:boolean=false;
 
 
   constructor(private authService:AuthServiceService){
 
   }
+
   ngOnInit(): void {
     
-    this.user=this.authService.isLoggedIn;
+    
+    this.authService.auth.subscribe((data)=>{
+       this.isUserAuthenticated=data
+    })
   
   }
   
