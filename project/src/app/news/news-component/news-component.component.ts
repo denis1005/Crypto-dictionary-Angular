@@ -1,5 +1,6 @@
 
 import { Component, OnInit } from '@angular/core';
+import { Route, Router } from '@angular/router';
 import { INewsArticle } from 'src/app/shared/interfaces/NewsInterface';
 import { NewsServiceService } from '../news-service.service';
 
@@ -12,16 +13,17 @@ export class NewsComponentComponent implements OnInit {
 
   newsData:INewsArticle[] | []=[];
 
-  constructor(public newsService:NewsServiceService ){
+  constructor(public newsService:NewsServiceService,private router:Router ){
 
   }
 
 
   ngOnInit(): void {
      this.newsService.getNews().subscribe((data)=>{
-      this.newsData=data.articles.slice(0,15);
+      this.newsData=data.articles.slice(0,20);
      })
   }
 
+  
  
 }

@@ -4,13 +4,15 @@ import { NewsComponentComponent } from "./news-component/news-component.componen
 
 
 
+
 const routes:Routes = [
     {
        path:'news',
        component:NewsComponentComponent
        
     },
-    
+   
+     
 ]
 
 export const NewsRoutingModule = RouterModule.forChild(routes);

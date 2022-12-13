@@ -6,10 +6,10 @@ import { NewsComponentComponent } from './news-component/news-component.componen
 import { SharedModule } from "../shared/shared.module";
 
 
-
 @NgModule({
     declarations: [
-        NewsComponentComponent
+        NewsComponentComponent,
+        
     ],
     imports: [
         CommonModule,

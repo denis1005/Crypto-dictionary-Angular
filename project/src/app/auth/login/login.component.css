@@ -69,6 +69,7 @@
     letter-spacing: 4px;
     background-color: transparent;
     border: none;
+    cursor: pointer;
   }
   
   .login-box button:hover {
