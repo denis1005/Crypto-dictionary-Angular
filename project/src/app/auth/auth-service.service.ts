@@ -3,14 +3,16 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable, tap } from 'rxjs';
 import { IUser } from '../shared/interfaces/UserInterfase';
 
+  
+
+
 @Injectable({
   providedIn: 'root'
 })
 export class AuthServiceService {
-
-  user:IUser | null=null;
+  user?: IUser
   private _isLoggedIn$=new BehaviorSubject<boolean>(false);
-  auth=this._isLoggedIn$.asObservable()
+  auth=this._isLoggedIn$.asObservable();
   
 
   
@@ -20,6 +22,10 @@ export class AuthServiceService {
 
   get isLoggedIn(){
       return this.user !==null
+  }
+
+  get getUser(){
+    return JSON.parse(localStorage.getItem('user')|| '{}') as IUser
   }
 
   constructor(private http: HttpClient) { 
@@ -32,6 +38,7 @@ export class AuthServiceService {
     .post<IUser>(`/api/users/register`,{email,password}).pipe(
       tap((response:any)=>{
         this._isLoggedIn$.next(true)
+        
       })
     )
   }
@@ -41,6 +48,7 @@ export class AuthServiceService {
     .post<IUser>(`/api/users/login`,{email,password}).pipe(
       tap((response:any)=>{
         this._isLoggedIn$.next(true)
+        
       })
     )
   }
@@ -50,6 +58,8 @@ export class AuthServiceService {
     return this.http.get(`/api/users/logout`,{headers}).pipe(
       tap((response:any)=>{
         this._isLoggedIn$.next(false)
+  
+      
       })
     );
   }

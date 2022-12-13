@@ -21,7 +21,6 @@ export class LoginComponent {
     .subscribe(user=>{
       this.authService.user=user;
       localStorage.setItem("user",JSON.stringify(user));
-      console.log(this.authService.user, this.authService.auth)
       this.router.navigate(['/'])
     })
    }
