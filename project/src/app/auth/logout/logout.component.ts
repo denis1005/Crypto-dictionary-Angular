@@ -16,10 +16,9 @@ export class LogoutComponent implements OnInit {
 
   constructor(private authServices:AuthServiceService, private router:Router) {
     this.user=this.authServices.getUser
-    console.log(this.user)
       this.headers = new HttpHeaders()
-        .set('Content-Type', 'application/json')
-        .append('X-Authorization', `${ this.user?.accessToken}`);
+       .set('Content-Type', 'application/json')
+      .append('X-Authorization', `${ this.user?.accessToken}`);
    
   
    
@@ -37,7 +36,6 @@ export class LogoutComponent implements OnInit {
         }
       });
     } else {
-      // Redirect to login page if the user is not logged in.
       this.router.navigate(['/login']);
     }
   }

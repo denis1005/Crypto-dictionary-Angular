@@ -65,6 +65,6 @@ export class AuthServiceService {
   }
 
   getProfile(headers:HttpHeaders){
-    return this.http.request('GET','/api/users/me',{headers})
+    return this.http.request<IUser>('GET','/api/users/me',{headers})
   }
 }
