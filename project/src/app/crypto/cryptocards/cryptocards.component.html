@@ -1,11 +1,11 @@
 
 <div class="cards-list">
   
-    <div class="card 1" *ngFor="let crypto of cryptoData">
-      <div class="card_image"> <img src={{crypto.imgUrl}} /> </div>
+    <div  class="card 1" *ngFor="let crypto of cryptoData">
+      <div (click)="clickHandler(crypto._id)" class="card_image"> <img src={{crypto.imgUrl}} /> </div>
       <div class="card_title title-white">
-        <a [routerLink]="['/crypto',crypto._id]">Read more</a>
       </div>
+      
     </div>
     
       <ng-container *ngIf="cryptoData.length===0">

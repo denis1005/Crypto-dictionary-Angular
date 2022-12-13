@@ -1647,10 +1647,24 @@
     		}
     	},
         crypto:{
+            "54e6d099-6e00-4613-97b7-bc2b6bdc1db6": {
+                "name": "Bitcoin",
+                "symbol": "BTC",
+                "imgUrl": "https://imageio.forbes.com/specials-images/imageserve/61119c500f0713e04e419c4e/A-picture-of-bitcoin--a-digital-currency-/960x0.jpg?format=jpg&width=960",
+                "description":"Bitcoin is a peer-to-peer online currency, meaning that all transactions happen directly between equal, independent network participants, without the need for any intermediary to permit or facilitate them. Bitcoin was created, according to Nakamoto’s own words, to allow “online payments to be sent directly from one party to another without going through a financial institution.",
+                 "facts": {
+                    'founder':"In 2008, Satoshi Nakamoto appeared out of the ether to establish the world's first cryptocurrency. Then he disappeared just as abruptly. Nothing fires the imagination like an anonymous hero with a secret identity",
+                    'coins':'Bitcoin inventor Satoshi Nakamoto, the anonymous name used by the creators of the Bitcoin cryptocurrency, designed the cryptocurrency essentially as digital gold and capped the Bitcoin maximum supply to mimic the finite quantity of physical gold. The maximum number of bitcoins that can be issued—mined—is 21 million.',
+                    'funFact':"According to crypto data firm Chainalysis, around 20% of Bitcoin has been lost or is stuck in wallets that can't be accessed. Today that equates to 3.76 million BTC (worth about $190 billion).",
+                 },
+                 
+                
+                "_id": "54e6d099-6e00-4613-97b7-bc2b6bdc1db6",
+            },
             "54e6d099-6e00-4613-97b7-bc2b6bdc1db5": {
                 "name": "Ethereum",
                 "symbol": "ETH",
-                "imgUrl": "https://img.freepik.com/premium-photo/eth-ethereum-icon-logo-black-flag-banner-background-concept-3d-illustration-cryptocurrency_309402-3.jpg?w=1060",
+                "imgUrl": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iCStoqirsl4w/v0/1200x800.jpg",
                 "description":"Ethereum is a decentralized blockchain platform that establishes a peer-to-peer network that securely executes and verifies application code, called smart contracts. Smart contracts allow participants to transact with each other without a trusted central authority.It is traded as a digital currency on exchanges, held as an investment, used to purchase goods and services, and used on the Ethereum network to pay transaction fees.",
                  "facts": {
                     'founder':'Vitalik Buterin. Buterin is a co-founder and inventor of Ethereum, described as a "decentralised mining network and software development platform rolled into one" that facilitates the creation of new cryptocurrencies and programs that share a single blockchain (a cryptographic transaction ledger).',
@@ -1660,6 +1674,104 @@
                  
                 
                 "_id": "54e6d099-6e00-4613-97b7-bc2b6bdc1db5",
+            },
+            "54e6d099-6e00-4613-97b7-bc2b6bdc1db7": {
+                "name": "Tether",
+                "symbol": "USDT",
+                "imgUrl": "https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2022/05/tether.jpg",
+                "description":"SDT is a stablecoin (stable-value cryptocurrency) that mirrors the price of the U.S. dollar, issued by a Hong Kong-based company Tether. The token’s peg to the USD is achieved via maintaining a sum of commercial paper, fiduciary deposits, cash, reserve repo notes, and treasury bills in reserves that is equal in USD value to the number of USDT in circulation.",
+                 "facts": {
+                    'founder':"Tether founder, Craig Sellars, became the CTO of the Mastercoin Foundation. The precursor to Tether, originally named Realcoin, was announced in July 2014 by co-founders Brock Pierce, Reeve Collins, and Craig Sellars as a Santa Monica based startup.",
+                    'coins':'It has a circulating supply of 65,792,060,111 USDT coins and the max. supply is not available. If you would like to know where to buy Tether at the current rate, the top cryptocurrency exchanges for trading in Tether stock are currently Binance, OKX, Bybit, CoinTiger, and XT.COM.',
+                    'funFact':"Did you know it's the third most valuable cryptocurrency, with the highest trading volume of a staggering 30 billion USD a day? It was the first cryptocurrency, which was designed to build a bridge between the crypto world and regular currencies. That's why today about 80 % of all Bitcoin trading is done in Tether.",
+                 },
+                 
+                
+                "_id": "54e6d099-6e00-4613-97b7-bc2b6bdc1db7",
+            },
+            "54e6d099-6e00-4613-97b7-bc2b6bdc1db8": {
+                "name": "BNB",
+                "symbol": "BNB",
+                "imgUrl": "https://miro.medium.com/max/1400/1*tCLnpubWAALEdpRp8TDy8g.jpeg",
+                "description":"Launched in July 2017, Binance is the biggest cryptocurrency exchange globally based on daily trading volume. Binance aims to bring cryptocurrency exchanges to the forefront of financial activity globally. The idea behind Binance’s name is to show this new paradigm in global finance — Binary Finance, or Binance.",
+                 "facts": {
+                    'founder':"BNB is a cryptocurrency (token) that was created by Binance back in 2017. It was first issued and launched during an Initial Coin Offering (ICO) crowdfunding event, which took place between the 26th of June to the 3rd of July. The token sale offered 100,000,000 units of BNB (50% of the total supply).",
+                    'coins':'This coin runs on the Ethereum blockchain with standard ERC 20 and is limited to a maximum of 200 million BNB tokens.',
+                    'funFact':"More accurately, CZ learnt about Bitcoin in 2013 during an at-home poker game. Thereafter, he was intrigued by crypto and the potential it offered, and went on to gain hands-on experience with a crypto wallet provider and within the crypto marketplace. Eventually, in July 2017, he launched Binance.",
+                 },
+                 
+                
+                "_id": "54e6d099-6e00-4613-97b7-bc2b6bdc1db8",
+            },
+            "54e6d099-6e00-4613-97b7-bc2b6bdc1db13": {
+                "name": "Binance USD",
+                "symbol": "BUSD",
+                "imgUrl": "https://s3.amazonaws.com/images.investorsobserver.com/wp-content/uploads/2021/11/04154736/Untitled-design-39.jpg",
+                "description":"BUSD is a stablecoin that is pegged to the value of the US dollar. A stablecoin is a type of cryptocurrency that is designed to maintain a stable value, typically by being pegged to a stable asset like the US dollar. BUSD is issued by Binance, a popular cryptocurrency exchange, and is used as a means of storing and transferring value on the Binance blockchain. BUSD can be traded on cryptocurrency exchanges, used to purchase goods and services, and held as a stable store of value.",
+                 "facts": {
+                    'founder':"he BUSD stablecoin was founded by Paxos and Binance in an effort to create a cryptocurrency that would be backed by the US dollar. A key characteristic of BUSD is that one unit of BUSD is equivalent to one US dollar. To support this value, Paxos holds an amount of US dollars that is equal to the total supply of BUSD",
+                    'coins':'The total supply of BUSD, like most stablecoins, is not fixed and can vary depending on market conditions and the demand for the token. Stablecoins are typically issued and redeemed on a 1:1 basis with their underlying asset, in this case the US dollar. This means that the supply of BUSD can increase or decrease depending on the demand for the token and the availability of US dollars to back it.',
+                    'funFact':"BUSD is an ERC-20 token, which means it is based on the Ethereum blockchain and can be stored in any wallet that supports Ethereum-based tokens, is used by many traders and investors as a way to hedge against volatility in the cryptocurrency market, as its value is stable and not subject to the same price fluctuations as other cryptocurrencies.BUSD is backed by a reserve of US dollars held by Binance, and the company has undergone regular audits to verify the authenticity and adequacy of the reserves.",
+                 },
+                 
+                
+                "_id": "54e6d099-6e00-4613-97b7-bc2b6bdc1db13",
+            },
+            "54e6d099-6e00-4613-97b7-bc2b6bdc1db9": {
+                "name": "XRP",
+                "symbol": "XRP",
+                "imgUrl": "https://img.capital.com/imgs/articles/662x308x1/shutterstock_1987854818.jpg",
+                "description":"Launched in 2021, the XRP Ledger (XRPL) is an open-source, permissionless and decentralized technology. Benefits of the XRP Ledger include its low-cost ($0.0002 to transact), speed (settling transactions in 3-5 seconds), scalability (1,500 transactions per second) and inherently green attributes (carbon-neutral and energy-efficient). The XRP Ledger also features the first decentralized exchange (DEX) and custom tokenization capabilities built into the protocol. Since 2012, the XRP Ledger has been operating reliably, having closed 70 million ledgers.",
+                 "facts": {
+                    'founder':"Ripple Labs Inc., the company behind the XRP cryptocurrency, was founded by Chris Larsen and Jed McCaleb.",
+                    'coins':'XRP currently has 45,404 billion tokens in circulation, while its total supply counts 100 billion XRP tokens. Though, Ripple Labs initially owned 55 billion XRP tokens, with the ability to sell 1 billion per month.',
+                    'funFact':"XRP is the third-largest cryptocurrency by market capitalization, after Bitcoin and Ethereum.Unlike Bitcoin, which was designed to be a decentralized digital currency, XRP was designed to be a digital asset for use in global payments and settlements.XRP transactions are typically confirmed within just a few seconds, making it one of the fastest cryptocurrencies available.The total supply of XRP is limited to 100 billion coins, with over 45 billion currently in circulation.In 2013, Ripple Labs Inc. donated $1 million worth of XRP to the nonprofit organization DonorsChoose.org, making it the largest donation the organization had ever received at the time.",
+                 },
+                 
+                
+                "_id": "54e6d099-6e00-4613-97b7-bc2b6bdc1db9",
+            },
+            "54e6d099-6e00-4613-97b7-bc2b6bdc1db10": {
+                "name": "Dogecoin",
+                "symbol": "Dogecoin",
+                "imgUrl": "https://images-workbench.99static.com/B6M8HE_HAc6aEARrwUF0FuwaDnU=/http://s3.amazonaws.com/projects-files/117/11718/1171854/f8cdd323-8203-4293-85c9-8b22bedfdcd9.gif",
+                "description":"Dogecoin is a cryptocurrency that was created as a joke in 2013. It is based on the popular Doge internet meme, which features a Shiba Inu dog accompanied by comic sans text in the foreground. Despite its origins as a joke, Dogecoin has gained a significant following and has become a legitimate cryptocurrency. It is often used for online tipping and charitable donations. Like other cryptocurrencies, Dogecoin is decentralized and uses blockchain technology to securely and transparently record transactions.",
+                 "facts": {
+                    'founder':"Dogecoin was created by software engineers Billy Markus and Jackson Palmer. Markus, who was working at IBM at the time, was inspired to create a cryptocurrency that was more accessible and fun than Bitcoin. He reached out to Palmer, who worked at Adobe and had experience with marketing, and together they launched Dogecoin in December 2013. The name and mascot of the coin were inspired by the Doge internet meme, which was popular at the time.",
+                    'coins':'The total supply of Dogecoin is unlimited, unlike some other cryptocurrencies like Bitcoin which have a limited supply. This means that new Dogecoin can be created and added to the network at any time. The rate at which new Dogecoin is added is controlled by the Dogecoin network itself, and it is designed to produce a constant rate of new coins per block. This means that the overall supply of Dogecoin will increase over time, but the rate of inflation will decrease as more coins are added to the network.',
+                    'funFact':"Dogecoin was originally created as a joke, but it quickly gained a dedicated following and became a legitimate cryptocurrency.In January 2014, Dogecoin was used to raise funds for the Jamaican bobsled team to attend the Winter Olympics. The campaign was successful and the team was able to compete thanks to the support of the Dogecoin community.In March 2014, Dogecoin reached a market capitalization of $60 million, making it one of the most valuable cryptocurrencies at the time.In 2017, the Dogecoin community raised over $55,000 worth of Dogecoin to send the Alabama Crimson Tide college football team to the 2018 Sugar Bowl.Dogecoin has been used to raise funds for a variety of charitable causes, including clean water initiatives, animal shelters, and education programs.",
+                 },
+                 
+                
+                "_id": "54e6d099-6e00-4613-97b7-bc2b6bdc1db10",
+            },
+            "54e6d099-6e00-4613-97b7-bc2b6bdc1db11": {
+                "name": "Cardano",
+                "symbol": "ADA",
+                "imgUrl": "https://u.today/sites/default/files/styles/1600x900/public/2022-12/May%20Cardano%20%28ADA%29%20Be%202023%20Highlight%20of%20Cryptocurrency%20Market%3F.jpeg",
+                "description":"Cardano is a decentralized, open-source blockchain platform and cryptocurrency project. It is focused on providing a secure and scalable platform for the development and execution of smart contracts and decentralized applications (dapps). Cardano was founded by Charles Hoskinson, co-founder of Ethereum, and is being developed by the non-profit organization IOHK (Input Output Hong Kong). Cardano uses a proof-of-stake (PoS) consensus algorithm called Ouroboros and its native cryptocurrency is called ADA.",
+                 "facts": {
+                    'founder':"Cardano was founded by Charles Hoskinson, who is also the co-founder of Ethereum. Hoskinson is a well-known figure in the cryptocurrency community and has been involved in the development of several blockchain-related projects. He is currently the CEO of IOHK, the company that is developing Cardano, and is also a founding member of the Cardano Foundation, which is a non-profit organization that oversees the development and promotion of the Cardano platform.",
+                    'coins':'The total supply of Cardanos native cryptocurrency, ADA, is limited to 45 billion coins. This is a fixed supply and no more ADA can be created once this number has been reached. The current circulating supply of ADA is around 31 billion, according to CoinMarketCap. The distribution of ADA is determined by the Ouroboros proof-of-stake (PoS) consensus algorithm used by the Cardano network. This algorithm rewards network participants who hold and stake their ADA to support the network.',
+                    'funFact':"Cardano is the first blockchain platform to be developed through a scientific philosophy and built on peer-reviewed academic research.Cardano's proof-of-stake (PoS) consensus algorithm, Ouroboros, is the first PoS algorithm to be rigorously proved to be secure under the random-oracle model.Cardano's blockchain is built in two layers, the settlement layer and the computing layer, which allows for greater flexibility and scalability.The Cardano Foundation, the non-profit organization that oversees the development of the Cardano platform, is based in Switzerland, which is known for its supportive.ardano is one of the top 10 cryptocurrencies by market capitalization and its native cryptocurrency, ADA, is widely traded on cryptocurrency exchanges. ",
+                 },
+                 
+                
+                "_id": "54e6d099-6e00-4613-97b7-bc2b6bdc1db11",
+            },
+            "54e6d099-6e00-4613-97b7-bc2b6bdc1db12": {
+                "name": "Polygon",
+                "symbol": "MATIC",
+                "imgUrl": "https://zipmex.com/static/bc1e0244657086574ec8635eb907585d/MATIC-price-prediction.jpg",
+                "description":"Matic Network (MATIC) is a blockchain platform that aims to provide scalability and improved user experience for decentralized applications (dapps) on the Ethereum network. It uses a combination of side chains and a plasma-based mechanism to achieve high transaction throughput and low transaction fees. The native cryptocurrency of the Matic Network is the MATIC token, which is used to pay for transaction fees and can also be staked by network participants to earn rewards. MATIC is an ERC-20 token and can be stored in any wallet that supports Ethereum.",
+                 "facts": {
+                    'founder':"Matic Network was founded by Jaynti Kanani and Sandeep Nailwal. Kanani has a background in software engineering and has previously co-founded several technology startups. Nailwal is a blockchain entrepreneur and has been involved in the development of several blockchain-related projects. Together, they founded Matic Network with the goal of solving the scalability and usability challenges facing the Ethereum network.",
+                    'coins':'The total supply of MATIC, the native cryptocurrency of the Matic Network, is 10,000,000,000 tokens. This is a fixed supply and no more MATIC can be created once this number has been reached. The current circulating supply of MATIC is around 2,600,000,000, according to CoinMarketCap. The distribution of MATIC is determined by the network s proof-of-stake (PoS) consensus algorithm, which rewards network participants who hold and stake their MATIC to support the network.',
+                    'funFact':"Matic Network was founded by Jaynti Kanani and Sandeep Nailwal, two experienced blockchain entrepreneurs with a track record of successful startups.Matic Network is built on top of the Ethereum network and uses a combination of side chains and plasma to achieve high transaction throughput and low fees.Matic Network has partnerships with several well-known blockchain projects, including Chainlink, Binance, and Maker.Matic Network has a strong focus on user experience and has developed a wallet and other tools to make it easy for users to interact with dapps on the platform.MATIC, the native cryptocurrency of Matic Network, is listed on a number of major cryptocurrency exchanges and is widely traded.",
+                 },
+                 
+                
+                "_id": "54e6d099-6e00-4613-97b7-bc2b6bdc1db12",
             },
         },
         memes:{
