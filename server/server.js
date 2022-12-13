@@ -1653,11 +1653,11 @@
                 "imgUrl": "https://img.freepik.com/premium-photo/eth-ethereum-icon-logo-black-flag-banner-background-concept-3d-illustration-cryptocurrency_309402-3.jpg?w=1060",
                 "description":"Ethereum is a decentralized blockchain platform that establishes a peer-to-peer network that securely executes and verifies application code, called smart contracts. Smart contracts allow participants to transact with each other without a trusted central authority.It is traded as a digital currency on exchanges, held as an investment, used to purchase goods and services, and used on the Ethereum network to pay transaction fees.",
                  "facts": {
-                    'founder':'Vitalik Buterin',
+                    'founder':'Vitalik Buterin. Buterin is a co-founder and inventor of Ethereum, described as a "decentralised mining network and software development platform rolled into one" that facilitates the creation of new cryptocurrencies and programs that share a single blockchain (a cryptographic transaction ledger).',
                     'coins':'117.5 million ETH coins in circulation',
                     'funFact':'Ethereum Testnets named after Metro Station.Ethereum blockchain has 5 testnets i.e Goerli, Sepolia, Ropsten, Rinkeby & Koven. All the testnets are named after metro stations. For example, Goerli is named after a metro station in Berlin, Germany.',
                  },
-                 'video':'width="560" height="315" src="https://www.youtube.com/embed/jxLkbJozKbY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>',
+                 
                 
                 "_id": "54e6d099-6e00-4613-97b7-bc2b6bdc1db5",
             },

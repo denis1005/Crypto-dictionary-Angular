@@ -14,9 +14,10 @@ export class CryptoCardsComponent implements OnInit {
 
     }
   ngOnInit(): void {
-    this.cryptoService.getAllCrypto().subscribe((data)=>{
-      this.cryptoData=data;
-      console.log(this.cryptoData);
-    });
+    this.cryptoService.getAllCrypto().subscribe({
+      next: (data)=>this.cryptoData=data,
+      error: (err)=>(console.log(err))
+
+    })
   }
 }
