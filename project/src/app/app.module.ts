@@ -9,6 +9,7 @@ import { AuthModule } from './auth/auth.module';
 import { CoreModule } from "./core/core.module";
 import { MainModule } from "./main/main.module";
 import { appInterceptorProvider } from './app.interceptor';
+import { NewsModule } from './news/news.module';
 
 
 
@@ -29,6 +30,7 @@ import { appInterceptorProvider } from './app.interceptor';
         CoreModule,
         MainModule,
         HttpClientModule,
+        NewsModule,
         
     ]
 })

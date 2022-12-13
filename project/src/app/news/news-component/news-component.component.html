@@ -1,0 +1,21 @@
+<div class="container">
+    <ul class="news">
+            
+            <li *ngFor="let news of newsData" class="news-content" >
+                
+                <img src={{news.urlToImage}} alt="">
+                <div class="description">
+                    <h2>{{news.title}}</h2>
+                    <p>{{news.description}}</p>
+                </div>
+               
+                <!-- <a href= {{news.url}}>Read more</a> -->
+            </li>
+
+            <ng-container *ngIf="newsData.length===0">
+                <app-spinner></app-spinner>
+              </ng-container>
+            
+        
+    </ul>
+</div>
