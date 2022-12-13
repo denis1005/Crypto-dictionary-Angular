@@ -1,16 +1,23 @@
-<h2>Name: Denislav</h2>
-<div class="container">
-    <div class="img-container">
-        <img src={{profile?.imgUrl}} alt="">
-    </div>
-    <div class="content">
-        <p>Username: {{profile?.username}} </p>
-        <p>Email: {{profile?.email}} </p>
-        <p>Number: </p>
-        <p>Address:</p>
-        <p>Phone: </p>
-        <button id="edit">Edit</button>
+
+<ng-container *ngIf="profile">
+    <h2>Name: Denislav</h2>
+    <div class="container">
+        <div class="img-container">
+            <img src={{profile?.imgUrl}} alt="">
+        </div>
+        <div class="content">
+            <p>Username: {{profile?.username}} </p>
+            <p>Email: {{profile?.email}} </p>
+            <p>Address:</p>
+            <p>Phone: </p>
+            <button id="edit">Edit</button>
+        </div>
+        
+           
     </div>
     
-       
-</div>
+</ng-container>
+
+<ng-container *ngIf="profile===null">
+    <app-spinner></app-spinner>
+  </ng-container>

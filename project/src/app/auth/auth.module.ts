@@ -6,26 +6,26 @@ import { RegisterComponent } from './register/register.component';
 import { FormsModule } from '@angular/forms';
 import { LogoutComponent } from './logout/logout.component';
 import { ProfileComponent } from './profile/profile.component';
+import { SharedModule } from "../shared/shared.module";
 
 
 
 
 @NgModule({
-  declarations: [
-    LoginComponent,
-    RegisterComponent,
-    LogoutComponent,
-    ProfileComponent,
-    
-  ],
-  imports: [
-    CommonModule,
-    AuthRoutingModule,
-    FormsModule,
-
-  ],
-  exports: [
-    LoginComponent
-  ]
+    declarations: [
+        LoginComponent,
+        RegisterComponent,
+        LogoutComponent,
+        ProfileComponent,
+    ],
+    exports: [
+        LoginComponent
+    ],
+    imports: [
+        CommonModule,
+        AuthRoutingModule,
+        FormsModule,
+        SharedModule
+    ]
 })
 export class AuthModule { }
