@@ -2,7 +2,7 @@ import { HttpHeaders } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { IUser } from 'src/app/shared/interfaces/UserInterfase';
-import { AuthServiceService } from '../auth-service.service';
+import { AuthServiceService } from '../../auth/auth-service.service';
 
 @Component({
   selector: 'app-profile',

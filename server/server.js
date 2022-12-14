@@ -1324,18 +1324,25 @@
     			username: "Peter",
     			hashedPassword: "83313014ed3e2391aa1332615d2f053cf5c1bfe05ca1cbcb5582443822df6eb1",
                 imgUrl:"https://i.insider.com/62724502f6bd4b0019cb4db6?width=700",
+                address:'1036 O Hara Street',
+                phone:'+359 2 537 8441'
+                
     		},
     		"847ec027-f659-4086-8032-5173e2f9c93a": {
     			email: "george@abv.bg",
     			username: "George",
     			hashedPassword: "83313014ed3e2391aa1332615d2f053cf5c1bfe05ca1cbcb5582443822df6eb1",
-                imgUrl:"https://pbs.twimg.com/profile_images/1485632175932383235/8t0DGo6V_400x400.jpg"
+                imgUrl:"https://pbs.twimg.com/profile_images/1485632175932383235/8t0DGo6V_400x400.jpg",
+                address:'58198 Hollis Lodge',
+                phone:'+359 2 537 8441'
     		},
     		"60f0cf0b-34b0-4abd-9769-8c42f830dffc": {
     			email: "admin@abv.bg",
     			username: "Admin",
     			hashedPassword: "fac7060c3e17e6f151f247eacb2cd5ae80b8c36aedb8764e18a41bbdc16aa302",
-                imgUrl:'https://vtes-hook.com/media/kunena/avatars/resized/size200/users/avatar344.png?1567812743'
+                imgUrl:'https://vtes-hook.com/media/kunena/avatars/resized/size200/users/avatar344.png?1567812743',
+                address:'486 Koby Brook',
+                phone:'+359 2 537 8441'
     		}
     	},
     	sessions: {
@@ -1780,21 +1787,18 @@
     			title: "Bitcoiners be like",
     			imgUrl: "https://experty-web.imgix.net/f153889d-cd8a-446d-9b90-953c739d0a20?auto=compress&h=720&w=1280",
     			_id: "0a272c58-b7ea-4e09-a000-7ec988248f63",
-                likes:5,
     		} ,
             "0a272c58-b7ea-4e09-a000-7ec988248f64": {
     			_ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
     			title: "Ethereum useres be like",
     			imgUrl: "https://influencermarketinghub.com/wp-content/uploads/2022/05/Top-100-Crypto-Memes-of-2022-11-it-costs-everything.jpg",
     			_id: "0a272c58-b7ea-4e09-a000-7ec988248f64",
-                likes:5,
     		} ,
             "0a272c58-b7ea-4e09-a000-7ec988248f65": {
     			_ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
     			title: "New hodlers",
     			imgUrl: "https://experty-web.imgix.net/30518724-ac82-49bc-a14e-a4bd444370aa?auto=compress&h=720&w=1280",
     			_id: "0a272c58-b7ea-4e09-a000-7ec988248f65",
-                likes:5,
     		} ,
             "b9b72219-a00a-46ac-9138-9f070ed9933d":{
                 "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",

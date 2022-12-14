@@ -5,9 +5,9 @@ import { AuthRoutingModule } from './auth-routin-module';
 import { RegisterComponent } from './register/register.component';
 import { FormsModule } from '@angular/forms';
 import { LogoutComponent } from './logout/logout.component';
-import { ProfileComponent } from './profile/profile.component';
+
 import { SharedModule } from "../shared/shared.module";
-import { EditProfileComponent } from './edit-profile/edit-profile.component';
+
 
 
 
@@ -17,8 +17,6 @@ import { EditProfileComponent } from './edit-profile/edit-profile.component';
         LoginComponent,
         RegisterComponent,
         LogoutComponent,
-        ProfileComponent,
-        EditProfileComponent,
     ],
     exports: [
         LoginComponent
