@@ -1,9 +1,17 @@
+h2 {
+  text-align: center;
+  color: aqua;
+}
+
 .cards-list {
     width: 80%;
     display: grid;
     grid-template-columns: 14rem 14rem 14rem 14rem;
     justify-content: center;
     margin: 0 auto;
+    
+    background-color: rgba(23, 23, 50, 0.7);
+    border-radius: 2rem;
     
   }
   
