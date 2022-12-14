@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IMeme } from 'src/app/shared/interfaces/MemeInterface';
 import { MemesService } from '../memes.service';
 
 @Component({
@@ -7,12 +8,16 @@ import { MemesService } from '../memes.service';
   styleUrls: ['./memes-component.component.css']
 })
 export class MemesComponentComponent implements OnInit {
+
+  memesData:IMeme[] | null = null;
     
   constructor(private memeService:MemesService){
 
   }
-  
+
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+     this.memeService.getAll().subscribe((memes)=>{
+        this.memesData=memes;
+     })
   }
 }

@@ -1,4 +1,4 @@
-interface IMeme {
+export interface IMeme {
     _ownerId: string;
     title: string;
     imgUrl: string;

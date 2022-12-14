@@ -34,7 +34,7 @@
     width: 30%;
     height: 250px;
     border-radius: 20px;
-    object-fit: cover;
+    object-fit: fill;
     border: 1px solid
 }
 

@@ -1,44 +1,21 @@
-<!-- <ng-container *ngIf="">
+  
+   <h2>Memes Collection</h2>
+<ng-container *ngIf="memesData?.length==null">
     <app-spinner></app-spinner>
   </ng-container>
-   -->
-   <h2>Memes Collection</h2>
-  <div class="cards-list">
+
+  <ng-container *ngIf="memesData?.length!==null">
     
-      <div  class="card 1" >
-        <div  class="card_image"> <img src="https://static1.tgstat.ru/channels/_0/e0/e00f56febd72f22780e5ba0862f455e7.jpg" /> </div>
+    <div class="cards-list">
+    
+      <div *ngFor="let meme of memesData"  class="card 1" >
+        <div  class="card_image"> <img src={{meme.imgUrl}} /> </div>
         <div class="card_title title-white">
         </div>
         
       </div>
-      <div  class="card 1" >
-        <div  class="card_image"> <img src="https://static1.tgstat.ru/channels/_0/e0/e00f56febd72f22780e5ba0862f455e7.jpg" /> </div>
-        <div class="card_title title-white">
-        </div>
-        
+      
       </div>
-      <div  class="card 1" >
-        <div  class="card_image"> <img src="https://static1.tgstat.ru/channels/_0/e0/e00f56febd72f22780e5ba0862f455e7.jpg" /> </div>
-        <div class="card_title title-white">
-        </div>
-        
-      </div>
-      <div  class="card 1" >
-        <div  class="card_image"> <img src="https://static1.tgstat.ru/channels/_0/e0/e00f56febd72f22780e5ba0862f455e7.jpg" /> </div>
-        <div class="card_title title-white">
-        </div>
-        
-      </div>
-      <div  class="card 1" >
-        <div  class="card_image"> <img src="https://static1.tgstat.ru/channels/_0/e0/e00f56febd72f22780e5ba0862f455e7.jpg" /> </div>
-        <div class="card_title title-white">
-        </div>
-        
-      </div>
-      <div  class="card 1" >
-        <div  class="card_image"> <img src="https://static1.tgstat.ru/channels/_0/e0/e00f56febd72f22780e5ba0862f455e7.jpg" /> </div>
-        <div class="card_title title-white">
-        </div>
-        
-      </div>
-      </div>
+  </ng-container>
+  
+

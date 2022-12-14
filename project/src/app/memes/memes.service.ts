@@ -1,6 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { AuthServiceService } from '../auth/auth-service.service';
+import { IMeme } from '../shared/interfaces/MemeInterface';
 
 @Injectable({
   providedIn: 'root'
