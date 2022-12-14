@@ -67,4 +67,8 @@ export class AuthServiceService {
   getProfile(headers:HttpHeaders){
     return this.http.request<IUser>('GET','/api/users/me',{headers})
   }
+
+  updateProfile(headers:HttpHeaders,data:any){
+    return this.http.post('/api/users/me',data,{headers})
+  } 
 }

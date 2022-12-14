@@ -8,8 +8,8 @@
         <div class="content">
             <p>Username: {{profile.username}} </p>
             <p>Email: {{profile.email}} </p>
-            <p>Address:</p>
-            <p>Phone: </p>
+            <p>Address:{{profile.address}}</p>
+            <p>Phone: {{profile.phone}} </p>
             <button (click)="ediHandler(profile._id)" id="edit">Edit</button>
         </div>
         

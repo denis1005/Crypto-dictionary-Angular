@@ -1,32 +1,36 @@
 
-
-    <div class="login-box">
-      <h2>Edit Profile</h2>
-      <form #form="ngForm" >
-        <div class="user-box">
-          <input type="text"   name="username"  required >
-          <label>Username</label>
+<ng-container *ngIf="user!==null">
+  <div class="login-box">
+    <h2>Edit Profile</h2>
+    <form #form="ngForm" (ngSubmit)="EditProfileHandler()">
+      <div class="user-box">
+        <input type="text" [(ngModel)]="user.username"  name="username"  required >
+        <label>Username</label>
+      </div>
+      <div class="user-box">
+          <input type="text" [(ngModel)]="user.email"   name="email"  required >
+          <label>Email</label>
         </div>
         <div class="user-box">
-            <input type="text"   name="email;"  required >
-            <label>Email</label>
-          </div>
-          <div class="user-box">
-            <input type="text"   name="address"  required >
-            <label>Address</label>
-          </div>
-          <div class="user-box">
-            <input type="text"   name="phone"  required >
-            <label>Phone</label>
-          </div>
-        <button>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          Edit
-        </button>
-      </form>
-    </div>
+          <input type="text" [(ngModel)]="user.address"   name="address"  required >
+          <label>Address</label>
+        </div>
+        <div class="user-box">
+          <input type="text" [(ngModel)]="user.phone"   name="phone"  required >
+          <label>Phone</label>
+        </div>
+      <button>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Edit
+      </button>
+    </form>
+  </div>
+</ng-container>
 
-  
+<ng-container *ngIf="user==null">
+  <app-spinner></app-spinner>
+</ng-container>
+    

@@ -21,9 +21,7 @@ export class ProfileComponent implements OnInit {
     }
 
   ngOnInit(): void {
-    this.authService.getProfile(this.headers).subscribe((profile)=>{
-        this.profile=profile
-    })
+    this.profile=this.authService.getUser
   }
 
   ediHandler(profileId:string){
