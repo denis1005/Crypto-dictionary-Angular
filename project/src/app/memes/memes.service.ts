@@ -15,11 +15,11 @@ export class MemesService {
    }
     
 getAll(){
-  return this.http.get('/api/data/memes')
+  return this.http.get<IMeme[]>('/api/data/memes')
 }
 
 getOne(memeId:string){
-  return this.http.get(`/api/data/memes/${memeId}`)
+  return this.http.get<IMeme>(`/api/data/memes/${memeId}`)
 }
 
 createOne(title:string,imgUrl:string,headers:HttpHeaders){
