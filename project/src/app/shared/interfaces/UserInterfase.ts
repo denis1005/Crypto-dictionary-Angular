@@ -4,4 +4,6 @@ export interface IUser {
     imgUrl: string;
     _id: string;
     accessToken: string;
+    address?:string;
+    phone?:string
   }
