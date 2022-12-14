@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { IMeme } from 'src/app/shared/interfaces/MemeInterface';
 import { MemesService } from '../memes.service';
 
@@ -11,7 +12,7 @@ export class MemesComponentComponent implements OnInit {
 
   memesData:IMeme[] | null = null;
     
-  constructor(private memeService:MemesService){
+  constructor(private memeService:MemesService,private router:Router){
 
   }
 
@@ -20,4 +21,8 @@ export class MemesComponentComponent implements OnInit {
         this.memesData=memes;
      })
   }
+
+  clickHandler(memeId:string){
+    this.router.navigate(['meme/details',memeId],)
+  } 
 }

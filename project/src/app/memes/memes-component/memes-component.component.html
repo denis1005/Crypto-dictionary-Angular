@@ -9,7 +9,7 @@
     <div class="cards-list">
     
       <div *ngFor="let meme of memesData"  class="card 1" >
-        <div  class="card_image"> <img src={{meme.imgUrl}} /> </div>
+        <div (click)="clickHandler(meme._id)"   class="card_image"> <img src={{meme.imgUrl}} /> </div>
         <div class="card_title title-white">
         </div>
         
