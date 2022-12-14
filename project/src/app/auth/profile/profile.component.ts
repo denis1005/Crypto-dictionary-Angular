@@ -1,5 +1,6 @@
 import { HttpHeaders } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { IUser } from 'src/app/shared/interfaces/UserInterfase';
 import { AuthServiceService } from '../auth-service.service';
 
@@ -13,7 +14,7 @@ export class ProfileComponent implements OnInit {
   headers!: HttpHeaders;
 
 
-    constructor (public authService: AuthServiceService){
+    constructor (private authService: AuthServiceService, private router:Router){
       this.headers = new HttpHeaders()
        .set('Content-Type', 'application/json')
        .append('X-Authorization', `${ this.authService.getUser.accessToken}`);
@@ -23,5 +24,9 @@ export class ProfileComponent implements OnInit {
     this.authService.getProfile(this.headers).subscribe((profile)=>{
         this.profile=profile
     })
+  }
+
+  ediHandler(profileId:string){
+    this.router.navigate(['profile/edit',profileId])
   }
 }
