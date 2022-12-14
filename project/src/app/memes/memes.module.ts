@@ -4,18 +4,22 @@ import { MemesComponentComponent } from './memes-component/memes-component.compo
 import { MemesRoutingModule } from './memes-routing-module';
 import { SharedModule } from "../shared/shared.module";
 import { MemeDetailsComponent } from './meme-details/meme-details.component';
+import { EditComponentComponent } from './edit-component/edit-component.component';
+import { FormsModule } from '@angular/forms';
 
 
 
 @NgModule({
     declarations: [
         MemesComponentComponent,
-        MemeDetailsComponent
+        MemeDetailsComponent,
+        EditComponentComponent
     ],
     imports: [
         CommonModule,
         MemesRoutingModule,
-        SharedModule
+        SharedModule,
+        FormsModule
     ]
 })
 export class MemesModule { }
