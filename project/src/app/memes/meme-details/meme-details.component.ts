@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { AuthServiceService } from 'src/app/auth/auth-service.service';
 import { IMeme } from 'src/app/shared/interfaces/MemeInterface';
 import { IUser } from 'src/app/shared/interfaces/UserInterfase';
@@ -21,7 +21,8 @@ export class MemeDetailsComponent implements OnInit {
 
     constructor( private route:ActivatedRoute, 
       private memeService: MemesService,
-      private authService:AuthServiceService){
+      private authService:AuthServiceService,
+      private router:Router){
        this.memeId= route.snapshot.params['memeId']
        this.user=this.authService.getUser
     }
@@ -43,6 +44,10 @@ export class MemeDetailsComponent implements OnInit {
     }else {
       return false;
     }
+  }
+
+  editHandler(memeId:string){
+    this.router.navigate(['meme/edit',memeId])
   }
 
 }

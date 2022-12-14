@@ -31,8 +31,8 @@ deleteOne(memeId:string) {
  return this.http.delete(`/api/data/memes/${memeId}`)
 }
 
-updateOne(memeId:string,data:any){
-  return this.http.put(`/api/data/memes/${memeId}`,data)
+updateOne(memeId:string,data:any,headers:HttpHeaders){
+  return this.http.put(`/api/data/memes/${memeId}`,data, {headers})
 }
 
 }

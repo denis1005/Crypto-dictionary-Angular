@@ -16,7 +16,6 @@ export class LoginComponent {
 
    loginHandler(form: NgForm):void {
     const {email,password}=form.value;
-    console.log(email,password)
     this.authService.login(email,password)
     .subscribe(user=>{
       this.authService.user=user;

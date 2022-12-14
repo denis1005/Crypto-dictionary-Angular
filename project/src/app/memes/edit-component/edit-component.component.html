@@ -1,20 +1,24 @@
-<div class="login-box">
-    <h2>Login</h2>
-    <form #form="ngForm" (ngSubmit)="editHandler(form)">
+
+<ng-container *ngIf="meme!==null">
+  <div class="login-box">
+    <h2>Edit</h2>
+    <form #form="ngForm" (ngSubmit)="editHandler()">
       <div class="user-box">
-        <input type="text" ngModel name="email" required="">
-        <label>Username</label>
+        <input type="text"  [(ngModel)]="meme.title " name="title"  required >
+        <label>Title</label>
       </div>
       <div class="user-box">
-        <input type="password" ngModel name="password" required="">
-        <label>Password</label>
+        <input type="text"  [(ngModel)]="meme.imgUrl" name="imgUrl"  required >
+        <label>Image URL</label>
       </div>
       <button>
         <span></span>
         <span></span>
         <span></span>
         <span></span>
-        Submit
+        Edit
       </button>
     </form>
   </div>
+
+</ng-container>
