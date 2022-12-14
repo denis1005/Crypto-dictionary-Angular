@@ -10,12 +10,15 @@ import { CoreModule } from "./core/core.module";
 import { MainModule } from "./main/main.module";
 import { appInterceptorProvider } from './app.interceptor';
 import { NewsModule } from './news/news.module';
+import { MemesModule } from './memes/memes.module';
+
 
 
 
 @NgModule({
     declarations: [
         AppComponent,
+    
 
     ],
     providers: [
@@ -31,7 +34,7 @@ import { NewsModule } from './news/news.module';
         MainModule,
         HttpClientModule,
         NewsModule,
-        
+        MemesModule 
     ]
 })
 export class AppModule { }
