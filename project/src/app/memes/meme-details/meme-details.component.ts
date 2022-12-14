@@ -50,4 +50,8 @@ export class MemeDetailsComponent implements OnInit {
     this.router.navigate(['meme/edit',memeId])
   }
 
+  deleteHandler(memeId:string){
+    this.router.navigate(['meme/delete',memeId])
+  }
+
 }

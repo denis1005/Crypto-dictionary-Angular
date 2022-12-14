@@ -15,7 +15,7 @@
             
             <div class="buttons">
                 <ng-container *ngIf="isOwner()">
-                    <img class="img-edits" src="../../../assets/meme-icons/delete.png" alt="img">
+                    <img (click)="deleteHandler(meme._id)"  class="img-edits" src="../../../assets/meme-icons/delete.png" alt="img">
                      <img (click)="editHandler(meme._id)" class="img-edits" src="../../../assets/meme-icons/edit.png" alt="img">
                 </ng-container>
                 <ng-container *ngIf="!isOwner()">

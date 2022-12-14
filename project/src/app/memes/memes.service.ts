@@ -27,8 +27,8 @@ createOne(title:string,imgUrl:string,headers:HttpHeaders){
   return this.http.post(`/api/data/memes/`,{title,imgUrl},{headers})
 }
 
-deleteOne(memeId:string) {
- return this.http.delete(`/api/data/memes/${memeId}`)
+deleteOne(memeId:string,headers:HttpHeaders) {
+ return this.http.delete(`/api/data/memes/${memeId}`,{headers})
 }
 
 updateOne(memeId:string,data:any,headers:HttpHeaders){
