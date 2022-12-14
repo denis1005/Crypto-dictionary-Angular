@@ -6,6 +6,7 @@ import { SharedModule } from "../shared/shared.module";
 import { MemeDetailsComponent } from './meme-details/meme-details.component';
 import { EditComponentComponent } from './edit-component/edit-component.component';
 import { FormsModule } from '@angular/forms';
+import { DeleteMemeComponent } from './delete-meme/delete-meme.component';
 
 
 
@@ -13,7 +14,8 @@ import { FormsModule } from '@angular/forms';
     declarations: [
         MemesComponentComponent,
         MemeDetailsComponent,
-        EditComponentComponent
+        EditComponentComponent,
+        DeleteMemeComponent
     ],
     imports: [
         CommonModule,
