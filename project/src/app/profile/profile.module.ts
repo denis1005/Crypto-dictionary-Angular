@@ -5,13 +5,15 @@ import { ProfileComponent } from './profile/profile.component';
 import { ProfileRoutingModule } from './profile-routing-module';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
+import { MemeColectionComponent } from './meme-colection/meme-colection.component';
 
 
 
 @NgModule({
   declarations: [
     EditProfileComponent,
-    ProfileComponent
+    ProfileComponent,
+    MemeColectionComponent
   ],
   imports: [
     CommonModule,

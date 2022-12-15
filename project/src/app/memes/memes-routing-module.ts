@@ -1,4 +1,5 @@
 import { RouterModule, Routes } from "@angular/router";
+import { AddMemeComponent } from "./add-meme/add-meme.component";
 import { DeleteMemeComponent } from "./delete-meme/delete-meme.component";
 import { EditComponentComponent } from "./edit-component/edit-component.component";
 import { LikeComponent } from "./like/like.component";
@@ -30,6 +31,10 @@ const routes:Routes = [
      { 
       path:'meme/like/:memeId',
       component:LikeComponent, 
+     },
+     { 
+      path:'memes/add',
+      component:AddMemeComponent, 
      },
     
 ]

@@ -7,7 +7,6 @@
         <li><a routerLink="/">Home</a></li>
         <li><a routerLink="/news">News</a></li>
         <li><a routerLink="/memes">Memes</a></li>
-        <li><a href="#">about</a></li>
       </ul>
     </li>
     <ng-container *ngIf="!isUserAuthenticated">
@@ -25,17 +24,13 @@
       </li>
     </ng-container >
      <ng-container *ngIf="isUserAuthenticated">
-      <li><a routerLink="/logout">Logout</a>
-     
+      <li><a routerLink="/memes/add">Add meme</a>
       </li>
-      <li><a routerLink="/news">News</a>
-        
+      <li><a routerLink="/profile/collection">My memes</a>
       </li>
       <li><a routerLink="/profile">Profile</a>
-        
       </li>
-      <li><a routerLink="/memes">Memes</a>
-        
+      <li><a routerLink="/logout">Logout</a>
       </li>
      </ng-container>
    

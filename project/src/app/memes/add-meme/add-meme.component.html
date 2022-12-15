@@ -1,0 +1,24 @@
+
+    <div class="login-box">
+      <h2>Create</h2>
+      <form #form="ngForm" (ngSubmit)="createHandler()">
+        <div class="user-box">
+          <input type="text"  ngModel name="title"  required >
+          <label>Title</label>
+        </div>
+        <div class="user-box">
+          <input type="text"  ngModel name="imgUrl"  required >
+          <label>Image URL</label>
+        </div>
+        <button>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Create
+        </button>
+      </form>
+    </div>
+  
+
+  

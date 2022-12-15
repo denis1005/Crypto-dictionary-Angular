@@ -1,0 +1,28 @@
+  
+   <h2>My Memes Collection</h2>
+   <ng-container *ngIf="memesData==null">
+       <app-spinner></app-spinner>
+     </ng-container>
+   
+     <ng-container *ngIf="memesData?.length==0">
+      <div class="no-data">
+        <p>You don't have any memes in your collection. If you want to add one you can go to: </p>
+        <a routerLink="/memes/add">Add meme</a>
+      </div>
+     
+    </ng-container>
+
+     <ng-container *ngIf="memesData?.length!==null">
+       
+       <div class="cards-list">
+       
+         <div *ngFor="let meme of memesData"  class="card 1" >
+           <div (click)="clickHandler(meme._id)"   class="card_image"> <img src={{meme.imgUrl}} /> </div>
+           <div class="card_title title-white">
+           </div>
+           
+         </div>
+         
+         </div>
+     </ng-container>
+     
