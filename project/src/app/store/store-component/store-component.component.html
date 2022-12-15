@@ -1,0 +1,24 @@
+  
+   <h2>Store</h2>
+   <ng-container *ngIf="storeData?.length==null">
+       <app-spinner></app-spinner>
+     </ng-container>
+   
+    
+   
+     <ng-container *ngIf="storeData?.length!==null">
+       
+       <div class="cards-list">
+       
+         <div *ngFor="let shirt of storeData"  class="card 1" >
+           <div (click)="clickHandler(shirt._id)"   class="card_image"> <img src={{shirt.imgUrl}} /> </div>
+           <div class="card_title title-white">
+           </div>
+           
+         </div>
+         
+         </div>
+     </ng-container>
+     
+   
+   

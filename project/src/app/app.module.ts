@@ -12,6 +12,7 @@ import { appInterceptorProvider } from './app.interceptor';
 import { NewsModule } from './news/news.module';
 import { MemesModule } from './memes/memes.module';
 import { ProfileModule } from './profile/profile.module';
+import { StoreModule } from './store/store.module';
 
 
 
@@ -36,7 +37,8 @@ import { ProfileModule } from './profile/profile.module';
         HttpClientModule,
         NewsModule,
         MemesModule ,
-        ProfileModule
+        ProfileModule,
+        StoreModule
     ]
 })
 export class AppModule { }

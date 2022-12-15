@@ -2006,6 +2006,11 @@
             imgUrl:'https://cryptoteniska.com/wp-content/uploads/2020/11/ssrcoclassic_teeflatlay101010_01c5ca27c6frontwide_portrait750x1000.u1-e1607193196855.jpg',
            _id: "e797fa57-bf0a-4749-8028-72dba715e5f20",
            },
+        },
+
+        orders: {
+           'userId':'',
+           'shirtId': '',
         }
     };
     var rules$1 = {

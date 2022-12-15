@@ -24,6 +24,7 @@ export class LikeComponent {
        .set('Content-Type', 'application/json')
        .append('X-Authorization', `${ this.authService.getUser.accessToken}`);
        this.likeServices.like(this.memeId,this.headers).subscribe((result)=>{
+        console.log(result);
         this.router.navigate(['meme/details',this.memeId])
       })
    }
