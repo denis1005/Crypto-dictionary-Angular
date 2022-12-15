@@ -10,7 +10,7 @@
         <ng-container *ngIf="isAuth">
             <div class="likes">
                 <img id='love-icon' src="../../../assets/meme-icons/love.png">
-                <p>0</p>
+                <p>{{likes}}</p>
             </div>
             
             <div class="buttons">
@@ -19,7 +19,13 @@
                      <img (click)="editHandler(meme._id)" class="img-edits" src="../../../assets/meme-icons/edit.png" alt="img">
                 </ng-container>
                 <ng-container *ngIf="!isOwner()">
-                    <img src="../../../assets/meme-icons/like2.png" alt="img">
+                <ng-container *ngIf="!hasliked()">
+                    <img (click)="likeHandler(meme._id)" class="img-like" src="../../../assets/meme-icons/like2.png" alt="img">
+                </ng-container>
+                <ng-container *ngIf="hasliked()">
+                   
+                </ng-container>
+                    
                 </ng-container>
                 
             </div>

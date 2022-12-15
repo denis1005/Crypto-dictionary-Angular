@@ -7,6 +7,7 @@ import { MemeDetailsComponent } from './meme-details/meme-details.component';
 import { EditComponentComponent } from './edit-component/edit-component.component';
 import { FormsModule } from '@angular/forms';
 import { DeleteMemeComponent } from './delete-meme/delete-meme.component';
+import { LikeComponent } from './like/like.component';
 
 
 
@@ -15,7 +16,8 @@ import { DeleteMemeComponent } from './delete-meme/delete-meme.component';
         MemesComponentComponent,
         MemeDetailsComponent,
         EditComponentComponent,
-        DeleteMemeComponent
+        DeleteMemeComponent,
+        LikeComponent
     ],
     imports: [
         CommonModule,
