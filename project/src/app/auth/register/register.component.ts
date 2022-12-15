@@ -16,8 +16,8 @@ export class RegisterComponent {
   }
  
   registerHandler(form: NgForm):void{
-    const {email,password,address,phone}=form.value;
-    this.authService.register(email,password,address,phone)
+    const {email,username,imageUrl,password,address,phone}=form.value;
+    this.authService.register(email,username,imageUrl,password,address,phone)
     .subscribe(user=>{
       this.authService.user=user;
       localStorage.setItem("user",JSON.stringify(user));

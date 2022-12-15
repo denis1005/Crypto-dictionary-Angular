@@ -33,9 +33,9 @@ export class AuthServiceService {
     this._isLoggedIn$.next(!!user)
   }
 
-  register(email:string, password:string,address:string,phone:string){
+  register(email:string,username:string,imageUrl:string,password:string,address:string,phone:string){
     return this.http
-    .post<IUser>(`/api/users/register`,{email,password,address,phone}).pipe(
+    .post<IUser>(`/api/users/register`,{email,username,imageUrl,password,address,phone}).pipe(
       tap((response:any)=>{
         this._isLoggedIn$.next(true)
         

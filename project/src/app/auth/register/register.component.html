@@ -4,7 +4,15 @@
     <form #form="ngForm" (ngSubmit)="registerHandler(form)">
       <div class="user-box">
         <input type="text" ngModel name="email" required="">
+        <label>Email</label>
+      </div>
+      <div class="user-box">
+        <input type="text" ngModel name="username" required="">
         <label>Username</label>
+      </div>
+      <div class="user-box">
+        <input type="text" ngModel name="imageUrl" required="">
+        <label>Image URL</label>
       </div>
       <div class="user-box">
         <input type="password" ngModel name="password" required="">
