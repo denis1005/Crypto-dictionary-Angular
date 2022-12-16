@@ -29,7 +29,6 @@ import { StoreModule } from './store/store.module';
     bootstrap: [AppComponent],
     imports: [
         AuthModule,
-        AppRoutingModule,
         BrowserModule,
         CommonModule,
         CoreModule,
@@ -38,7 +37,8 @@ import { StoreModule } from './store/store.module';
         NewsModule,
         MemesModule ,
         ProfileModule,
-        StoreModule
+        StoreModule,
+        AppRoutingModule,
     ]
 })
 export class AppModule { }
