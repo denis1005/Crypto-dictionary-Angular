@@ -14,8 +14,8 @@
                 <div class="options">
                  <div class="size">
                      <label for="sizes">Sizes</label>
-                     <select #sizes (change)="onSelectedSizes()" required name="sizes">
-                         <option default>S</option>
+                     <select #sizes (change)="onSelectedSizes()" ngModel required="" name="sizes">
+                         <option default >S</option>
                          <option>M</option>
                          <option >L</option>
                          <option >XL</option>
@@ -24,15 +24,15 @@
                     </div>
                     <div class="gender">
                      <label for="gender">Gender</label>
-                     <select  #gender (change)="onSelectedGender()"  required name="gender">
-                         <option value="female">female</option>
-                         <option value="male">male</option>
+                     <select  #gender (change)="onSelectedGender()"   ngModel required name="gender">
+                         <option default>female</option>
+                         <option >male</option>
                      </select>
                     </div>
                     <div class="quantity">
                      <label for="quantity">Quantity</label>
-                     <select  #quantity (change)="onSelected()" required name="quantity">
-                         <option default>1</option>
+                     <select  #quantity (change)="onSelected()" ngModel required name="quantity">
+                         <option default >1</option>
                          <option >2</option>
                          <option >3</option>
                          <option >4</option>

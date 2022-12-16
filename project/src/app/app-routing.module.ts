@@ -6,7 +6,10 @@ const routes: Routes = [
   {
     path:'',
     pathMatch:'full',
-    component:MainComponent
+    component:MainComponent,
+    data:{
+      title:'Home',
+    }
   },
   
 ];
