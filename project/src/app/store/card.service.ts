@@ -21,4 +21,16 @@ export class CardService {
     return this.http.delete(`/api/data/shoppingCard/${shirtId}`,{headers})
   }
 
+  getOne(orderId:string){
+    return this.http.get<IShoppingCard>(`/api/data/shoppingCard/${orderId}`)
+  }
+
+  addOneToOrders(data:any,headers:HttpHeaders){
+    return this.http.post(`/api/data/myOrders/`,data,{headers})
+  }
+
+  getUserOrdersItems(userId:string){
+    return this.http.get<IShoppingCard[]>(`/api/data/myOrders?where=_ownerId%3D%22${userId}%22`)
+ }
+
 }

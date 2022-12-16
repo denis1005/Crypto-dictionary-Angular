@@ -6,6 +6,7 @@ import { ProfileRoutingModule } from './profile-routing-module';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
 import { MemeColectionComponent } from './meme-colection/meme-colection.component';
+import { OrdersComponent } from './orders/orders.component';
 
 
 
@@ -13,7 +14,8 @@ import { MemeColectionComponent } from './meme-colection/meme-colection.componen
   declarations: [
     EditProfileComponent,
     ProfileComponent,
-    MemeColectionComponent
+    MemeColectionComponent,
+    OrdersComponent
   ],
   imports: [
     CommonModule,

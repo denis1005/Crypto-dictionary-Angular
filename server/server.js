@@ -1489,7 +1489,7 @@
     	},
     	furniture: {
     	},
-    	orders: {
+    	myOrders: {
     	},
         shoppingCard: {
         },

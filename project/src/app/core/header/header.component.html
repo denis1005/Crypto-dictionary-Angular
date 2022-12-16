@@ -27,20 +27,25 @@
       </li>
     </ng-container >
      <ng-container *ngIf="isUserAuthenticated">
-      <li><a routerLink="/memes/add">Add meme</a>
-      </li>
-      <li><a routerLink="/profile/collection">My memes</a>
-      </li>
+    
       <li><a routerLink="/profile">Profile</a>
+        <ul class="drop menu1">
+          <li><a routerLink="/profile/collection">My memes</a>
+          </li>
+          <li><a routerLink="/memes/add">Add meme</a>
+          </li>
+          <li><a routerLink="/profile/orders">My orders</a></li>
+        </ul>
       </li>
-      <li><a routerLink="/logout">Logout</a>
-      </li>
+  
       <li><a routerLink="/store">Store</a>
         
       </li>
+    
 
       <li><a routerLink="store/card">Shopping card</a>
-        
+      </li>
+      <li><a routerLink="/logout">Logout</a>
       </li>
      </ng-container>
    

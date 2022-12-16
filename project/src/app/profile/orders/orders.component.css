@@ -1,4 +1,4 @@
- * {
+* {
     color: aqua;
  }
 
@@ -8,7 +8,7 @@
 
     width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     margin: 0 auto;
     margin-top: 20px;
@@ -21,6 +21,7 @@
     width: 33%;
     display: flex;
     gap: 10px;
+    
    
 }
 

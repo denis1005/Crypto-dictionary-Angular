@@ -17,22 +17,19 @@
                      <div class="product-information">
                         <p>Name: {{order.shirt.name}}</p>
                         <p>Price: {{order.shirt.price}}</p>
+                        <p>Quantity: {{order.order.quantity}} </p>
                         <a (click)="clickHandler(order._id)">Remove</a>
                      </div>
                 </div>
-                <div class="quantity">
-                    <p>Quantity: {{order.order.quantity}} </p>
-                </div>
-                <div class="price">
-                    <p>Price: {{order.shirt.price}} lv</p>
-                </div>
-            </div>
-            
+                
                 <div class="finish-order">
-                    <p>Total: {{totalSum}} lv </p>
-                    <button>Finish Order</button>
+                    <p>Total: {{totalSum(order.shirt.price,order.order.quantity)}} lv </p>
+                    <button (click)="finishHandler(order._id)">Finish Order</button>
                 </div>
         
+            </div>
+            
+                
            
         </div>
     </ng-container>

@@ -1,0 +1,47 @@
+
+  <h2>My Orders</h2>
+
+  <ng-container *ngIf="myOrders?.length==0">
+      <div class="no-data">
+        <p>You don't have any orders. If you want you can make one: </p>
+        <a routerLink="/store">Make order</a>
+      </div> 
+  </ng-container>
+  
+  <ng-container *ngIf="myOrders!==null">
+      <ng-container *ngIf="myOrders?.length!==0">
+          <div class="lis-contetn">
+              <div *ngFor="let order of myOrders" class="content">
+                  <div class="product">
+                      <img class="image" src={{order.shirt.imgUrl}} alt="">
+                       <div class="product-information">
+                          <p>Name: {{order.shirt.name}}</p>
+                          <p>Price: {{order.shirt.price}}</p>
+                          <p>Quantity: {{order.order.quantity}} </p>
+                       </div>
+                  </div>
+                  <div class="more-information">
+                    <p>Size: {{order.order.sizes}}</p>
+                    <p>Gender: {{order.order.gender}}</p>
+                    <p>Total: {{totalSum(order.shirt.price,order.order.quantity)}} lv </p>
+                  </div>
+                  <div class="send-adress">
+                     <h3>Sended to</h3>
+                     <p>Address: {{user?.address}} </p>
+                     <p>Phone: {{user?.phone}}</p>
+                  </div>
+          
+              </div>
+              
+                  
+             
+          </div>
+      </ng-container>
+      
+  </ng-container>
+  
+  <ng-container *ngIf="myOrders==null">
+      <app-spinner></app-spinner>
+  </ng-container>
+  
+  

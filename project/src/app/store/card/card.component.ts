@@ -15,7 +15,7 @@ import { CardService } from '../card.service';
 export class CardComponent implements OnInit {
   headers!: HttpHeaders;
   myOrders:IShoppingCard[] | null=null;
-  totalSum:number=0
+ 
 
   constructor (public cardService:CardService
     ,private authService:AuthServiceService,
@@ -27,14 +27,18 @@ export class CardComponent implements OnInit {
   ngOnInit(): void {
     this.cardService.getUserCardItems(this.authService.getUser._id).subscribe((data)=>{
       this.myOrders=data;
-      console.log(data)
-      data.forEach(x=>{
-        this.totalSum+= parseInt(x.shirt.price)
-      })
     })
   }
 
   clickHandler(orderId:string){
     this.router.navigate(['store/cancel',orderId])
+  }
+
+  finishHandler(order_id:string){
+    this.router.navigate(['store/finish',order_id])
+  }
+
+  totalSum(totalSum:string,quantity:string):number{
+    return parseInt(totalSum)*parseInt(quantity)
   }
 }

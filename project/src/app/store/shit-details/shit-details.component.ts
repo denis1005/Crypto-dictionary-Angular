@@ -1,5 +1,5 @@
 import { HttpHeaders } from '@angular/common/http';
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AuthServiceService } from 'src/app/auth/auth-service.service';
@@ -18,6 +18,25 @@ export class ShitDetailsComponent implements OnInit {
   shirt:ICryptoShirt | null=null
   shirtId:string=''
   headers!: HttpHeaders;
+  @ViewChild('quantity') quantity!: ElementRef;
+  @ViewChild('sizes') sizes!: ElementRef;
+  @ViewChild('genders') genders!: ElementRef;
+	selectedQuantity:string = '';
+  selectedSizes:string = ''
+  selectedGenders:string = ''
+
+	onSelected():void {
+		this.selectedQuantity = this.quantity.nativeElement.value;
+	}
+
+  onSelectedSizes():void {
+		this.selectedSizes = this.sizes.nativeElement.value;
+	}
+
+  onSelectedGender():void {
+		this.selectedGenders = this.genders.nativeElement.value;
+	}
+
 
   constructor(private router:Router, 
     public storeService:StoreService,
@@ -40,14 +59,17 @@ export class ShitDetailsComponent implements OnInit {
     });
   }
 
+  
+
   addToChartHandler(){
     const {price,sizes,gender,quantity}=this.form.value;
+    console.log(price,sizes,gender,quantity);
     const obj= {
       'order':{
         'price':price,
-        'sizes':sizes,
-        'gender':gender,
-        'quantity':quantity,
+        'sizes':this.selectedSizes,
+        'gender':this.selectedGenders,
+        'quantity':this.selectedQuantity,
       },
       'shirt':this.shirt
     }
