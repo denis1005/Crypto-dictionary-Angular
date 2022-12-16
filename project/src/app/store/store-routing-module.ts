@@ -1,5 +1,6 @@
 import { RouterModule, Routes } from "@angular/router";
 import { AuthActivate } from "../shared/guards/auth.activate";
+import { OrderCreatorActivate } from "../shared/guards/IsOrderOwner.active";
 import { CancelOrederComponent } from "./cancel-oreder/cancel-oreder.component";
 import { CardComponent } from "./card/card.component";
 import { FinishOrderComponent } from "./finish-order/finish-order.component";
@@ -32,19 +33,21 @@ const routes:Routes = [
 
      {
       path:'store/cancel/:orderId',
-      canActivate:[AuthActivate],
+      canActivate:[AuthActivate,OrderCreatorActivate],
       component:CancelOrederComponent,
       data:{
          'loginRequired':true,
+         'creatorOrderRequired':true,
       }
      },
 
      {
       path:'store/finish/:orderId',
-      canActivate:[AuthActivate],
+      canActivate:[AuthActivate,OrderCreatorActivate],
       component:FinishOrderComponent,
       data:{
          'loginRequired':true,
+         'creatorOrderRequired':true,
       }
      },
    

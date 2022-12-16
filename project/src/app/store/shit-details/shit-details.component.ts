@@ -80,7 +80,7 @@ export class ShitDetailsComponent implements OnInit {
     }
 
     this.cardService.addOneToCard(obj,this.headers).subscribe((data)=>{
-      console.log(data);
+
         this.router.navigate(['store/card']);
     })
   }
