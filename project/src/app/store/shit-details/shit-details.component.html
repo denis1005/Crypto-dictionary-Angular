@@ -4,44 +4,53 @@
         <div class="img-container">
             <img src="https://cryptoteniska.com/wp-content/uploads/2022/03/black-1.png" alt="">
         </div>
-        <div class="input">
-           <h2>{{shirt.name}}</h2>
-           <div class="price">
-            <label for="price">Price: {{shirt.price}} lv</label>
-           
-           </div>
-           <div class="options">
-            <div class="size">
-                <label for="sizes">Sizes</label>
-                <select #sizes (change)="onSelectedSizes()" required name="sizes">
-                    <option default>S</option>
-                    <option>M</option>
-                    <option >L</option>
-                    <option >XL</option>
-                    <option>XXL</option>
-                </select>
-               </div>
-               <div class="gender">
-                <label for="gender">Gender</label>
-                <select  #gender (change)="onSelectedGender()"  required name="gender">
-                    <option value="female">female</option>
-                    <option value="male">male</option>
-                </select>
-               </div>
-               <div class="quantity">
-                <label for="quantity">Quantity</label>
-                <select  #quantity (change)="onSelected()" required name="quantity">
-                    <option default>1</option>
-                    <option >2</option>
-                    <option >3</option>
-                    <option >4</option>
-                </select>
-               </div>
-           </div>
-          
-           <button>Add to card</button>
-    
-        </div>
+        <ng-container *ngIf="isAuth">
+            <div class="input">
+                <h2>{{shirt.name}}</h2>
+                <div class="price">
+                 <label for="price">Price: {{shirt.price}} lv</label>
+                
+                </div>
+                <div class="options">
+                 <div class="size">
+                     <label for="sizes">Sizes</label>
+                     <select #sizes (change)="onSelectedSizes()" required name="sizes">
+                         <option default>S</option>
+                         <option>M</option>
+                         <option >L</option>
+                         <option >XL</option>
+                         <option>XXL</option>
+                     </select>
+                    </div>
+                    <div class="gender">
+                     <label for="gender">Gender</label>
+                     <select  #gender (change)="onSelectedGender()"  required name="gender">
+                         <option value="female">female</option>
+                         <option value="male">male</option>
+                     </select>
+                    </div>
+                    <div class="quantity">
+                     <label for="quantity">Quantity</label>
+                     <select  #quantity (change)="onSelected()" required name="quantity">
+                         <option default>1</option>
+                         <option >2</option>
+                         <option >3</option>
+                         <option >4</option>
+                     </select>
+                    </div>
+                </div>
+               
+                <button>Add to card</button>
+         
+             </div>
+        </ng-container>
+        
+        <ng-container *ngIf="!isAuth">
+            <div class="no-data">
+                <p>You are not logged in. If you want to order the articule you should first login</p>
+                <a routerLink="/login">login</a>
+              </div> 
+        </ng-container>
     </form>
     
 </ng-container>

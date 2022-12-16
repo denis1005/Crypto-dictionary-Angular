@@ -4,6 +4,7 @@ import { NgForm } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AuthServiceService } from 'src/app/auth/auth-service.service';
 import { ICryptoShirt } from 'src/app/shared/interfaces/CryptoShirt';
+import { IUser } from 'src/app/shared/interfaces/UserInterfase';
 import { CardService } from '../card.service';
 import { StoreService } from '../store.service';
 
@@ -22,8 +23,9 @@ export class ShitDetailsComponent implements OnInit {
   @ViewChild('sizes') sizes!: ElementRef;
   @ViewChild('genders') genders!: ElementRef;
 	selectedQuantity:string = '';
-  selectedSizes:string = ''
-  selectedGenders:string = ''
+  selectedSizes:string = '';
+  selectedGenders:string = '';
+  isAuth:boolean =false;
 
 	onSelected():void {
 		this.selectedQuantity = this.quantity.nativeElement.value;
@@ -49,6 +51,9 @@ export class ShitDetailsComponent implements OnInit {
      .append('X-Authorization', `${ this.authService.getUser.accessToken}`);
 
     this.shirtId=route.snapshot.params['shirtId'];
+    authService.auth.subscribe((data)=>{
+        this.isAuth=data;
+    })
   }
 
   ngOnInit(): void {

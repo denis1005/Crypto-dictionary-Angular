@@ -43,7 +43,7 @@ export class FinishOrderComponent implements OnInit  {
     
     
     this.cardService.cancelOne(this.orderId,this.headers).subscribe((data)=>{
-      this.router.navigate(['store/card'])
+      this.router.navigate(['profile/orders'])
   
     })
     
