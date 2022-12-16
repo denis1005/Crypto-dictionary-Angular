@@ -1,0 +1,45 @@
+
+  <h2>Shopping card</h2>
+
+<ng-container *ngIf="myOrders?.length==0">
+    <div class="no-data">
+      <p>You don't have items in your shopping cart. If you want to add one you can go to: </p>
+      <a routerLink="/store">Add item</a>
+    </div> 
+</ng-container>
+
+<ng-container *ngIf="myOrders!==null">
+    <ng-container *ngIf="myOrders?.length!==0">
+        <div class="lis-contetn">
+            <div *ngFor="let order of myOrders" class="content">
+                <div class="product">
+                    <img class="image" src={{order.shirt.imgUrl}} alt="">
+                     <div class="product-information">
+                        <p>Name: {{order.shirt.name}}</p>
+                        <p>Price: {{order.shirt.price}}</p>
+                        <a (click)="clickHandler(order._id)">Remove</a>
+                     </div>
+                </div>
+                <div class="quantity">
+                    <p>Quantity: {{order.order.quantity}} </p>
+                </div>
+                <div class="price">
+                    <p>Price: {{order.shirt.price}} lv</p>
+                </div>
+            </div>
+            
+                <div class="finish-order">
+                    <p>Total: {{totalSum}} lv </p>
+                    <button>Finish Order</button>
+                </div>
+        
+           
+        </div>
+    </ng-container>
+    
+</ng-container>
+
+<ng-container *ngIf="myOrders==null">
+    <app-spinner></app-spinner>
+</ng-container>
+

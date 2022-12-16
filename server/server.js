@@ -1491,6 +1491,8 @@
     	},
     	orders: {
     	},
+        shoppingCard: {
+        },
     	movies: {
     		"1240549d-f0e0-497e-ab99-eb8f703713d7": {
     			_ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",

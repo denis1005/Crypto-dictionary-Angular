@@ -23,6 +23,7 @@ export class StoreService {
   getOne(shirtId:string){
     return this.http.get<ICryptoShirt>(`/api/data/store/${shirtId}`)
   }
+  
     
   
 }

@@ -17,10 +17,10 @@ import { StoreModule } from './store/store.module';
 
 
 
+
 @NgModule({
     declarations: [
         AppComponent,
-    
 
     ],
     providers: [

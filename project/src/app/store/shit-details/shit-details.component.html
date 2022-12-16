@@ -1,17 +1,47 @@
-<h2>Gold leafed” ETH crypt</h2>
-<div class="container">
-    <div class="img-container">
-        <img src="https://cryptoteniska.com/wp-content/uploads/2022/03/black-1.png" alt="">
-    </div>
-    <div class="content">
-        <h3>Information</h3>
-        <div class="class-information">
-            <p>price: 35.00 lv</p>
-            <p>sizes: "XXL", "XL", "S", "L", "M", "S"</p>
-            <p>gender: female,male</p>
+
+<ng-container *ngIf="shirt!=null">
+    <form  #form="ngForm" (ngSubmit)="addToChartHandler()" >
+        <div class="img-container">
+            <img src="https://cryptoteniska.com/wp-content/uploads/2022/03/black-1.png" alt="">
         </div>
-        <div class="button-container">
-            <button id="order">Order</button>
+        <div class="input">
+           <h2>{{shirt.name}}</h2>
+           <div class="price">
+            <label for="price">Price: {{shirt.price}} lv</label>
+           
+           </div>
+           <div class="options">
+            <div class="size">
+                <label for="sizes">Sizes</label>
+                <select ngModel required="" name="sizes">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                </select>
+               </div>
+               <div class="gender">
+                <label for="gender">Gender</label>
+                <select ngModel required name="gender">
+                    <option value="female">female</option>
+                    <option value="male">male</option>
+                </select>
+               </div>
+               <div class="quantity">
+                <label for="quantity">Quantity</label>
+                <select  ngModel required name="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="2">3</option>
+                    <option value="2">4</option>
+                </select>
+               </div>
+           </div>
+          
+           <button>Add to card</button>
+    
         </div>
-    </div>
-</div>
+    </form>
+    
+</ng-container>

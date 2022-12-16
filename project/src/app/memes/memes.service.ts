@@ -7,12 +7,9 @@ import { IMeme } from '../shared/interfaces/MemeInterface';
   providedIn: 'root'
 })
 export class MemesService {
-  headers: HttpHeaders | null=null;
-
+  
   constructor( private http: HttpClient, private authService:AuthServiceService) {
-    this.headers = new HttpHeaders()
-    .set('Content-Type', 'application/json')
-   .append('X-Authorization', `${ this.authService.getUser.accessToken}`);
+    
    }
     
 getAll(){
