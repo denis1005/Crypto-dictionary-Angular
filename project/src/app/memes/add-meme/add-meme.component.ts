@@ -25,6 +25,7 @@ export class AddMemeComponent {
  }
 
  createHandler():void{
+  if (this.form.invalid){return;}
   const {title,imgUrl}=this.form.value;
   this.memeService.
   createOne(title,imgUrl,this.headers)

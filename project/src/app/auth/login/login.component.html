@@ -2,13 +2,35 @@
     <h2>Login</h2>
     <form #form="ngForm" (ngSubmit)="loginHandler(form)">
       <div class="user-box">
-        <input type="text" ngModel name="email" required="">
+        <input #emailInput="ngModel" type="text" 
+         ngModel name="email"  email required>
+        <!-- {{emailInput.errors | json }} -->
+        <ng-container *ngIf="emailInput.touched">
+          <p class="error" *ngIf="emailInput.errors?.['required']">
+               Email is required
+          </p>
+          <p class="error" *ngIf="emailInput.errors?.['email']">
+            Email is in the wrong format
+          </p>
+        </ng-container>
+        
         <label>Username</label>
       </div>
       <div class="user-box">
-        <input type="password" ngModel name="password" required="">
+        <input #passwordInput="ngModel" type="password" 
+        ngModel name="password"  minlength="6" required>
         <label>Password</label>
+        <ng-container *ngIf="passwordInput.touched">
+          <p class="error" *ngIf="passwordInput.errors?.['required']">
+            Password is required
+         </p>
+          <p class="error" *ngIf="passwordInput.errors?.['minlength']">
+            Password should be at least 6 symbols
+          </p>
+        </ng-container>
       </div>
+      
+       
       <button>
         <span></span>
         <span></span>

@@ -4,12 +4,25 @@
     <h2>Edit</h2>
     <form #form="ngForm" (ngSubmit)="editHandler()">
       <div class="user-box">
-        <input type="text"  [(ngModel)]="meme.title " name="title"  required >
+        <input #titleInput="ngModel" type="text"  [(ngModel)]="meme.title " name="title"  required >
         <label>Title</label>
+        <ng-container *ngIf="titleInput.touched">
+          <p class="error" *ngIf="titleInput.errors?.['required']">
+            Title is required
+         </p>
+          <p class="error" *ngIf="titleInput.errors?.['minlength']">
+            Title should be at least 4 symbols
+          </p>
+        </ng-container>
       </div>
       <div class="user-box">
-        <input type="text"  [(ngModel)]="meme.imgUrl" name="imgUrl"  required >
+        <input #imageInput="ngModel" type="text"  [(ngModel)]="meme.imgUrl" name="imgUrl"  required >
         <label>Image URL</label>
+        <ng-container  *ngIf="imageInput.touched">
+          <p class="error" *ngIf="imageInput.errors?.['required']">
+            Image is required
+         </p>
+        </ng-container>
       </div>
       <button>
         <span></span>

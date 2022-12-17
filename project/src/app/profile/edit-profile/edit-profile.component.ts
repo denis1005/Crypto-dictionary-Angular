@@ -33,6 +33,7 @@ export class EditProfileComponent implements OnInit {
   }
 
   EditProfileHandler(){
+    if(this.form.invalid){return}
     const {username,email,address,phone}=this.form.value;
     const newUser={
       'email':email ,

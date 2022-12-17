@@ -14,29 +14,45 @@
                 <div class="options">
                  <div class="size">
                      <label for="sizes">Sizes</label>
-                     <select #sizes (change)="onSelectedSizes()" ngModel required="" name="sizes">
+                     <select #SizesSelect="ngModel" #sizes (change)="onSelectedSizes()" ngModel required name="sizes">
                          <option default >S</option>
                          <option>M</option>
                          <option >L</option>
                          <option >XL</option>
                          <option>XXL</option>
                      </select>
+                     <ng-container *ngIf="SizesSelect.touched">
+                        <p class="error" *ngIf="SizesSelect.errors?.['required']">
+                          Size Required
+                       </p>
+                    </ng-container>
                     </div>
                     <div class="gender">
                      <label for="gender">Gender</label>
-                     <select  #gender (change)="onSelectedGender()"   ngModel required name="gender">
+                     <select #genderSelect="ngModel"  #gender (change)="onSelectedGender()"   ngModel required name="gender">
                          <option default>female</option>
                          <option >male</option>
+                         
                      </select>
+                     <ng-container *ngIf="genderSelect.touched">
+                        <p class="error" *ngIf="genderSelect.errors?.['required']">
+                          Gender Required
+                       </p>
+                    </ng-container>
                     </div>
                     <div class="quantity">
                      <label for="quantity">Quantity</label>
-                     <select  #quantity (change)="onSelected()" ngModel required name="quantity">
+                     <select #quantitySelect="ngModel"  #quantity (change)="onSelected()" ngModel required name="quantity">
                          <option default >1</option>
                          <option >2</option>
                          <option >3</option>
                          <option >4</option>
                      </select>
+                     <ng-container *ngIf="quantitySelect.touched">
+                        <p class="error" *ngIf="quantitySelect.errors?.['required']">
+                            Quantity Required
+                       </p>
+                    </ng-container>
                     </div>
                 </div>
                

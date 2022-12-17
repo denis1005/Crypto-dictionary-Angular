@@ -17,7 +17,7 @@ export class TracerServiceService {
 
     return this.http
     .get<ICryptoTracer[]>
-    ('http://rest.coinapi.io/v1/assets?filter_asset_id=BTC,ETH,USDT,BNB,USDC,BUSD,XRP,DOGE,ADA,MATIC', { headers });
+    ('https://rest.coinapi.io/v1/assets?filter_asset_id=BTC,ETH,USDT,BNB,USDC,BUSD,XRP,DOGE,ADA,MATIC', { headers });
 
   }
 }

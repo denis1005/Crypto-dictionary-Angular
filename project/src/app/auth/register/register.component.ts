@@ -9,7 +9,7 @@ import { AuthServiceService } from '../auth-service.service';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent {
-   
+
   constructor(private authService: AuthServiceService,
     private router: Router){
 

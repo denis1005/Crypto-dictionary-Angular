@@ -39,6 +39,7 @@ export class EditComponentComponent implements OnInit {
 
 
   editHandler():void{
+    if(this.form.invalid){return}
     const {title,imgUrl}=this.form.value;
     this.memeService.
     updateOne(this.memeId,{title,imgUrl},this.headers)
@@ -47,3 +48,5 @@ export class EditComponentComponent implements OnInit {
     })
   }
 }
+
+

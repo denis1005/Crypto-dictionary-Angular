@@ -3,28 +3,75 @@
     <h2>Register</h2>
     <form #form="ngForm" (ngSubmit)="registerHandler(form)">
       <div class="user-box">
-        <input type="text" ngModel name="email" required="">
+        <input #emailInput="ngModel" type="text" ngModel name="email" required email>
         <label>Email</label>
+        <ng-container *ngIf="emailInput.touched">
+          <p class="error" *ngIf="emailInput.errors?.['required']">
+               Email is required
+          </p>
+          <p class="error" *ngIf="emailInput.errors?.['email']">
+            Email is in the wrong format
+          </p>
+        </ng-container>
+        
       </div>
       <div class="user-box">
-        <input type="text" ngModel name="username" required="">
+        <input #usernameInput="ngModel" type="text" ngModel name="username" required minlength="6" maxlength="10">
         <label>Username</label>
+        <ng-container *ngIf="usernameInput.touched">
+          <p class="error" *ngIf="usernameInput.errors?.['required']">
+            Username is required
+          </p>
+          <p class="error" *ngIf="usernameInput.errors?.['minlength']">
+            Username should be at least 6 symbols
+          </p>
+          <p class="error" *ngIf="usernameInput.errors?.['maxlength']">
+            Username should be max least 10 symbols
+          </p>
+        </ng-container>
       </div>
-      <div class="user-box">
-        <input type="text" ngModel name="imageUrl" required="">
+      <div   class="user-box">
+        <input #imgInput ="ngModel" type="text" ngModel name="imageUrl" required >
         <label>Image URL</label>
+        <ng-container *ngIf="imgInput.touched">
+          <p class="error" *ngIf="imgInput.errors?.['required']">
+               ImageUrl is required
+          </p>
+          
+        </ng-container>
       </div>
       <div class="user-box">
-        <input type="password" ngModel name="password" required="">
+        <input #passwordInput="ngModel" type="password" ngModel name="password" required="">
         <label>Password</label>
+         <ng-container *ngIf="passwordInput.touched">
+          <p class="error" *ngIf="passwordInput.errors?.['required']">
+            Password is required
+         </p>
+          <p class="error" *ngIf="passwordInput.errors?.['minlength']">
+            Password should be at least 6 symbols
+          </p> 
+        </ng-container>
       </div>
       <div class="user-box">
-        <input type="address" ngModel name="address" required="">
+        <input #addressInput="ngModel" type="address" ngModel name="address" required>
         <label>Address</label>
+        <ng-container *ngIf="addressInput.touched">
+          <p class="error" *ngIf="addressInput.errors?.['required']">
+            Address is required
+         </p>
+        </ng-container>
       </div>
-      <div class="user-box">
-        <input type="address" ngModel name="phone" required="">
+      <div  class="user-box">
+        <input #phoneInput="ngModel" type="address" ngModel name="phone" required maxlength="10">
         <label>Phone number</label>
+        <ng-container *ngIf="phoneInput.touched">
+          <p class="error" *ngIf="phoneInput.errors?.['required']">
+            Number is required
+         </p>
+         <p class="error" *ngIf="phoneInput.errors?.['maxlength']">
+          Please add valid number
+       </p>
+        </ng-container>
       </div>
    
    

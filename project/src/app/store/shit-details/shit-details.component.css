@@ -129,3 +129,12 @@ form {
     gap: 20px;
   }
 
+  .error{
+    margin: 0 auto;
+    color: aqua;
+    margin-bottom: 10px;
+    padding: 0;
+    width: 300px;
+    height: min-content;
+    text-align: center;
+  }

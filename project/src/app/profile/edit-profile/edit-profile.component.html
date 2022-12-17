@@ -4,20 +4,52 @@
     <h2>Edit Profile</h2>
     <form #form="ngForm" (ngSubmit)="EditProfileHandler()">
       <div class="user-box">
-        <input type="text" [(ngModel)]="user.username"  name="username"  required >
+        <input #usernameInput="ngModel" type="text" [(ngModel)]="user.username"  name="username"  required >
         <label>Username</label>
+        <ng-container *ngIf="usernameInput.touched">
+          <p class="error" *ngIf="usernameInput.errors?.['required']">
+            Username is required
+          </p>
+          <p class="error" *ngIf="usernameInput.errors?.['minlength']">
+            Username should be at least 6 symbols
+          </p>
+          <p class="error" *ngIf="usernameInput.errors?.['maxlength']">
+            Username should be max least 10 symbols
+          </p>
+        </ng-container>
       </div>
       <div class="user-box">
-          <input type="text" [(ngModel)]="user.email"   name="email"  required >
+          <input #emailInput="ngModel" type="text" [(ngModel)]="user.email"   name="email"  required >
           <label>Email</label>
+          <ng-container *ngIf="emailInput.touched">
+            <p class="error" *ngIf="emailInput.errors?.['required']">
+                 Email is required
+            </p>
+            <p class="error" *ngIf="emailInput.errors?.['email']">
+              Email is in the wrong format
+            </p>
+          </ng-container>
         </div>
         <div class="user-box">
-          <input type="text" [(ngModel)]="user.address"   name="address"  required >
+          <input #addressInput="ngModel" type="text" [(ngModel)]="user.address"   name="address"  required >
           <label>Address</label>
+          <ng-container *ngIf="addressInput.touched">
+            <p class="error" *ngIf="addressInput.errors?.['required']">
+              Address is required
+           </p>
+          </ng-container>
         </div>
         <div class="user-box">
-          <input type="text" [(ngModel)]="user.phone"   name="phone"  required >
+          <input #phoneInput="ngModel" type="text" [(ngModel)]="user.phone"   name="phone"  required >
           <label>Phone</label>
+          <ng-container *ngIf="phoneInput.touched">
+            <p class="error" *ngIf="phoneInput.errors?.['required']">
+              Number is required
+           </p>
+           <p class="error" *ngIf="phoneInput.errors?.['maxlength']">
+            Please add valid number
+         </p>
+          </ng-container>
         </div>
       <button>
         <span></span>

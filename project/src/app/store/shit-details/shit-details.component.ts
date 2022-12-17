@@ -67,6 +67,7 @@ export class ShitDetailsComponent implements OnInit {
   
 
   addToChartHandler(){
+    if (this.form.invalid){return;}
     const {price,sizes,gender,quantity}=this.form.value;
     console.log(price,sizes,gender,quantity);
     const obj= {

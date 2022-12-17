@@ -1,4 +1,8 @@
 
+*{
+  color: aqua;
+}
+
   .login-box {
     /* top: 50%;
     left: 50%;  */
@@ -160,5 +164,15 @@
     50%,100% {
       bottom: 100%;
     }
+  }
+
+  .error{
+    margin: 0 auto;
+    color: aqua;
+    margin-bottom: 10px;
+    padding: 0;
+    width: 300px;
+    height: min-content;
+    text-align: center;
   }
   
