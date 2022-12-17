@@ -74,7 +74,7 @@ https://crypto-dictionary-angular.web.app/
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 - https://codepen.io/
 - https://softuni.bg/
-- https://render.com/- 
--https://firebase.google.com/ 
+- https://render.com/
+- https://firebase.google.com/ 
 
 
