@@ -70,13 +70,13 @@ It will not show the user the necessary information if the data is entered incor
 
 ![validation](https://user-images.githubusercontent.com/19151979/208244998-dad4561d-b00b-4b30-9c74-9b4a609993d7.PNG)
 
-If the error comes from the server it will show the error message to the user
+If the error comes from the server it will show the error message to the user.Here is an example.
 
 
 ![logingeerr](https://user-images.githubusercontent.com/19151979/208245058-652cb5bb-2ced-4831-9b61-bd0d4c885dc6.PNG)
 
 
-If the user tries to go to a page that it is non existent, it will redirect him to 404
+If the user tries to go to a page that it is non existent, it will redirect him to 404.Here is an example.
 
 ![404](https://user-images.githubusercontent.com/19151979/208245148-41913403-3765-48b3-b306-21de51894f07.PNG)
 
