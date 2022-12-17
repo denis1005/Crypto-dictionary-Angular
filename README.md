@@ -4,12 +4,12 @@
 This is my react project for softuni defense for the Angular  course: 
 https://softuni.bg/trainings/3856/angular-november-2022
 
-To start the project:
+To start the project locally:
 
-Open the folder server in integrated terminal 
+Open the server folder  in integrated terminal 
 and type node server.js
 
-Open the folder project in integrated terminal 
+Open the project folder in integrated terminal 
 and type 
 
 npm i - command installs a 
