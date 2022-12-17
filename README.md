@@ -16,7 +16,6 @@ https://softuni.bg/trainings/3856/angular-november-2022
 - [About](#about)
 - [Getting Started](#getting_started)
 - [Deployment](#deployment)
-- [Contributing](../CONTRIBUTING.md)
 - [Usage](#usage)
 - [Authors](#authors)
 - [Acknowledgments](#acknowledgement)
