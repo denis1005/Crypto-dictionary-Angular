@@ -1,45 +1,80 @@
+<p align="center">
 
-# Crypto Dictionary 
+  ![Home](https://user-images.githubusercontent.com/19151979/208242678-b31aba2f-0cea-4bbd-9686-6a9d560b941d.PNG)
+</p>
 
-This is my react project for softuni defense for the Angular  course: 
+<h3 align="center">Crypto dictionary</h3>
+
+
+
+<p align="center"> 
+This is my angular project for softuni defense for the Angular  course: 
 https://softuni.bg/trainings/3856/angular-november-2022
+</p>
 
-To start the project locally:
+## 📝 Table of Contents
+- [About](#about)
+- [Getting Started](#getting_started)
+- [Deployment](#deployment)
+- [Contributing](../CONTRIBUTING.md)
+- [Authors](#authors)
+- [Acknowledgments](#acknowledgement)
+
+## 🧐 About <a name = "about"></a>
+The project is amateur in which you can see a collection of crypto-currencies, the price of which is monitored, as well as each crypto-currency has detailed information about it in a separate page when clicked. I have a collection of memes which, depending on whether the user is a gues or a registered user, has access to different actions. There is a news section where you can see 15 popular news on the topic. There is a shop section where there are various items that the logged in user can take advantage of.
+
+## 🏁 Getting Started <a name = "getting_started"></a>
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+
+
+### Installing
+A step by step series of examples that tell you how to get a development env running.
 
 Open the server folder  in integrated terminal 
-and type node server.js
+and type:
+
+```bash
+ node server.js
+```
 
 Open the project folder in integrated terminal 
-and type 
+and type:
 
-npm i - command installs a 
-package and any packages that it depends on
+```bash
+ npm i
+```
 
-ng s -o - To start the react project in localhost:4200
+nstalls a package and any packages that it depends on
+
+
+```bash
+ ng s -o
+```
+
+
+To start the angular project in localhost:4200
+
+
+
+
+## 🚀 Deployment <a name = "deployment"></a>
 
 You can also open live the site at:
 
 https://crypto-dictionary-angular.web.app/
 
-# Server
-
-For back-end i'm using 
-https://github.com/softuni-practice-server/softuni-practice-server
-
-# Project Structure
-
-The application have:
-
-  -	public part (accessible without authentication)- (Home, Login, Register, News, Memes, Store, StoreItemDetails, CryptoDetails, MemeDetails)
-  -	private part (available for registered users)- (Profile, ProfileMemeCollection, AddMeme, Orders, Logout, Card)
+## ⛏️ Built Using <a name = "built_using"></a>
+- [Angular](https://vuejs.org/) - Web Framework
+- [NodeJs](https://github.com/softuni-practice-server/softuni-practice-server) - Server Environment
 
 
-# Public Part
-Each guest has access to the home page and to the pages shown in the navigation. On it we see 10 crypto carts, which when clicked will take us to more detailed information about them. Crypto prices box that monitors prices in real time.We can also see in the second picture a video about blockchain, and 3 important facts
+## ✍️ Author <a name = "authors"></a>
+- [@denis1005](https://github.com/denis1005) 
 
-![image](https://user-images.githubusercontent.com/19151979/208241645-11b1e5ce-f17d-4e0d-ba93-a1f03c8d7c15.png)
-
-
-![home part 2](https://user-images.githubusercontent.com/19151979/208241799-ed841f68-ab43-4996-8ae9-9ad2f29fa51a.PNG)
+## 🎉 Acknowledgements <a name = "acknowledgement"></a>
+- https://codepen.io/
+- https://softuni.bg/
+- https://render.com/- 
+-https://firebase.google.com/ 
 
 
