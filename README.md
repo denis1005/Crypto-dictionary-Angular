@@ -54,6 +54,30 @@ nstalls a package and any packages that it depends on
 
 To start the angular project in localhost:4200
 
+## 🎈 Usage <a name="usage"></a>
+
+The application have:
+
+  -	public part (accessible without authentication)- (Home, Login, Register, News, Memes, Store, StoreItemDetails, CryptoDetails, MemeDetails)
+  -	private part (available for registered users)- (Profile, ProfileMemeCollection, AddMeme, Orders, Logout, Card)
+
+If a user tries to access something they don't have access to. If he needs to be logged in, it will forward him to the login page, if he does not have the right to edit/delte/create, he will forward him to the 404 page.
+
+
+Each form has a validation date. 
+It will not show the user the necessary information if the data is entered incorrectly. Here is an example.
+
+![validation](https://user-images.githubusercontent.com/19151979/208244998-dad4561d-b00b-4b30-9c74-9b4a609993d7.PNG)
+
+If the error comes from the server it will show the error message to the user
+
+
+![logingeerr](https://user-images.githubusercontent.com/19151979/208245058-652cb5bb-2ced-4831-9b61-bd0d4c885dc6.PNG)
+
+
+If the user tries to go to a page that it is non existent, it will redirect him to 404
+
+![404](https://user-images.githubusercontent.com/19151979/208245148-41913403-3765-48b3-b306-21de51894f07.PNG)
 
 
 
