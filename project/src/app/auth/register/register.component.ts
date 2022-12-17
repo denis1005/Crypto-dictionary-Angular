@@ -29,7 +29,11 @@ export class RegisterComponent {
         this.router.navigate(['/'])
       },
       error:(err)=>{
-        this.error$.next(err.error.message)
+        console.log(err)
+        if(err.status=='0'){
+          this.router.navigate(['404'])
+        }
+        this.error$.next(err.error.message || "Problems with the server")
       }
     })
    }

@@ -29,8 +29,15 @@ export class AddMemeComponent {
   const {title,imgUrl}=this.form.value;
   this.memeService.
   createOne(title,imgUrl,this.headers)
-  .subscribe((data)=>{
-     this.router.navigate(['memes'])
+  .subscribe({
+    next:(data)=>{
+      this.router.navigate(['memes'])
+   } ,
+   error:(err)=>{
+    if(err.status=='0'){
+      this.router.navigate(['404'])
+    }
+  }
   })
 }
 

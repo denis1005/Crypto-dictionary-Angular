@@ -19,7 +19,11 @@ export class CryptoCardsComponent implements OnInit {
   ngOnInit(): void {
     this.cryptoService.getAllCrypto().subscribe({
       next: (data)=>this.cryptoData=data,
-      error: (err)=>(console.log(err))
+      error: (err)=>{
+        if(err.status=='0'){
+          this.router.navigate(['404'])
+        }
+      }
 
     })
   }

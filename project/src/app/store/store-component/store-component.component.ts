@@ -16,8 +16,15 @@ export class StoreComponentComponent implements OnInit {
   }
 
   ngOnInit(): void {
-     this.storeService.getAll().subscribe((data)=>{
+     this.storeService.getAll().subscribe({
+      next: (data)=>{
         this.storeData=data;
+     },
+     error:(err)=>{
+      if(err.status=='0'){
+        this.router.navigate(['404'])
+      }
+    }
      })
   }
 

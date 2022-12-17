@@ -30,6 +30,9 @@ export class LoginComponent {
           this.router.navigate(['/'])
         },
         error:(err)=>{
+          if(err.status=='0'){
+            this.router.navigate(['404'])
+          }
           this.error$.next(err.error.message)
         }
       

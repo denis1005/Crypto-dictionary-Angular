@@ -19,8 +19,15 @@ export class NewsComponentComponent implements OnInit {
 
 
   ngOnInit(): void {
-     this.newsService.getNews().subscribe((data)=>{
-      this.newsData=data.articles.slice(0,20);
+     this.newsService.getNews().subscribe({
+      next:(data)=>{
+        this.newsData=data.articles.slice(0,20);
+       },
+       error:(err)=>{
+        if(err.status=='0'){
+          this.router.navigate(['404'])
+        }
+      }
      })
   }
 

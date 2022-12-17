@@ -17,8 +17,15 @@ export class MemesComponentComponent implements OnInit {
   }
 
   ngOnInit(): void {
-     this.memeService.getAll().subscribe((memes)=>{
+     this.memeService.getAll().subscribe({
+      next:(memes)=>{
         this.memesData=memes;
+     }, error:(err)=>{
+      if(err.status=='0'){
+        this.router.navigate(['404'])
+      }
+    }
+
      })
   }
 

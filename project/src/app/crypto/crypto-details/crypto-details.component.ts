@@ -22,8 +22,15 @@ export class CryptoDetailsComponent implements OnInit {
     if(this.cryptoId!=0){
       this.cryptoService
       .getOneCrypto(this.cryptoId)
-      .subscribe((crypto)=>{
-           this.crypto=crypto
+      .subscribe({
+        next:(crypto)=>{
+          this.crypto=crypto
+        },
+        error:(err)=>{
+          if(err.status=='0'){
+            this.router.navigate(['404'])
+          }
+        }
       })
     }
   
