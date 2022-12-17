@@ -26,6 +26,7 @@
     justify-content: space-around;
     color: white;
     align-items: center;
+    margin: 20px;
 }
 
 .crypto-item .logo {
