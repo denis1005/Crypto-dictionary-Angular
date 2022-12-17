@@ -1,5 +1,9 @@
 
   <div class="login-box">
+    <p class="error" *ngIf="error | async">
+      {{error | async | json}}
+    </p>
+
     <h2>Register</h2>
     <form #form="ngForm" (ngSubmit)="registerHandler(form)">
       <div class="user-box">

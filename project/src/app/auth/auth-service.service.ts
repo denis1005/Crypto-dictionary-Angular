@@ -1,6 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable, tap } from 'rxjs';
+import { BehaviorSubject, catchError, Observable, tap, throwError } from 'rxjs';
 import { IUser } from '../shared/interfaces/UserInterfase';
 
   
@@ -71,4 +71,6 @@ export class AuthServiceService {
   updateProfile(headers:HttpHeaders,data:any){
     return this.http.post('/api/users/me',data,{headers})
   } 
+
+  
 }

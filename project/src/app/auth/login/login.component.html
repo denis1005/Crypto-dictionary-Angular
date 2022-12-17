@@ -1,5 +1,12 @@
 <div class="login-box">
     <h2>Login</h2>
+   
+      <p class="error" *ngIf="error | async">
+        {{error | async | json}}
+      </p>
+
+   
+    
     <form #form="ngForm" (ngSubmit)="loginHandler(form)">
       <div class="user-box">
         <input #emailInput="ngModel" type="text" 
