@@ -15,9 +15,9 @@ export class CryptotrakerComponent implements OnInit  {
 
 
   ngOnInit(): void {
-    // this.tracerService.getData().subscribe(data=>{
-    //   this.cryptoData=data
-    // })
+    this.tracerService.getData().subscribe(data=>{
+      this.cryptoData=data
+    })
   }
    
 }

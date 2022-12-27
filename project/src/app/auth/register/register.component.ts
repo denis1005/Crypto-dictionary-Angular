@@ -29,7 +29,6 @@ export class RegisterComponent {
         this.router.navigate(['/'])
       },
       error:(err)=>{
-        console.log(err)
         if(err.status=='0'){
           this.router.navigate(['404'])
         }
